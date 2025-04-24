@@ -100,7 +100,8 @@ a:hover {
 
 
 img {
-    height: 40px;
+    max-width: 100%;
+    height: auto;
     display: block;
 }
 
@@ -164,20 +165,14 @@ figcaption.image-caption {
 
 .header-container { display: flex; justify-content: space-between; align-items: center; }
 
-.logo.logo-gradient {
-    font-size: 1.8rem;
-    font-weight: 700;
-    background: var(--gradient-text);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+.logo img,
+.logo-image {
+    height: 40px;   /* hoặc 24px tùy nhu cầu */
+    width: auto;
+    object-fit: contain;
+    display: block;
 }
-.logo.logo-gradient span { /* Dot color */
-    background: var(--secondary-vibrant);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
+
 
 .main-nav ul { display: flex; gap: 25px; /* Adjust gap slightly */ }
 .main-nav li { list-style: none; } /* Ensure no list markers */
@@ -621,6 +616,7 @@ figcaption.image-caption {
     margin-top: 2rem;
 }
 
+
 .vibrant-card { /* Shared style for principle, feedback, related */
     background: var(--bg-card);
     backdrop-filter: blur(8px);
@@ -1019,64 +1015,4 @@ figcaption.image-caption {
      .main-nav .dropdown-content:hover {
          transform: translateX(-50%) translateY(0);
      }
-}
-/* Fix layout cho dropdown Products */
-.main-nav .product-dropdown {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.main-nav .product-dropdown > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-nav .product-dropdown ul {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex-wrap: nowrap;
-}
-
-.main-nav .product-dropdown ul li a {
-    white-space: nowrap; /* Không cho xuống dòng giữa từ */
-    overflow: hidden;
-    text-overflow: ellipsis; /* Nếu quá dài thì hiển thị ... */
-}
-/* Fix layout cho dropdown Community */
-.main-nav .community-dropdown {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.main-nav .community-dropdown > div {
-    display: flex;
-    flex-direction: column;
-}
-
-.main-nav .community-dropdown ul {
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    flex-wrap: nowrap;
-}
-
-.main-nav .community-dropdown ul li a {
-    white-space: nowrap; /* Không xuống dòng */
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-.video-wrapper {
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    border-radius: 16px;
-}
-.video-wrapper video {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: inherit;
 }
