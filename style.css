@@ -180,13 +180,16 @@ figcaption.image-caption {
     -webkit-text-fill-color: transparent;
 }
 
-.main-nav ul { display: flex; gap: 30px; }
+.main-nav ul { display: flex; gap: 25px; /* Adjust gap slightly */ }
+.main-nav li { list-style: none; } /* Ensure no list markers */
 .main-nav a {
     color: var(--text-medium);
     font-weight: 500;
     position: relative;
     padding: 5px 0;
     transition: color var(--transition-fast) ease;
+    display: flex; /* For icon alignment */
+    align-items: center; /* For icon alignment */
 }
 .main-nav a::after {
     content: '';
@@ -205,7 +208,99 @@ figcaption.image-caption {
 }
 .main-nav a:hover::after { width: 100%; }
 
-/* --- Buttons (Glowing Effect) --- */
+/* --- Header Dropdowns (Grid Layout for Both) --- */
+.main-nav .dropdown { position: relative; }
+.main-nav .dropdown > a i { /* Style for chevron icon */
+    margin-left: 6px;
+    font-size: 0.7em;
+    transition: transform var(--transition-fast) ease;
+}
+.main-nav .dropdown:hover > a i {
+    transform: rotate(180deg);
+}
+.main-nav .dropdown-content {
+    /* === Ensure GRID display === */
+    display: grid;
+    grid-template-columns: repeat(3, minmax(180px, 1fr)); /* Default 3 columns */
+    gap: 25px;
+    /* === End GRID === */
+    position: absolute;
+    top: 100%;
+    left: 50%; /* Center relative to parent */
+    transform: translateX(-50%) translateY(10px); /* Centering and initial offset */
+    background-color: rgba(253, 252, 255, 0.97); /* Slightly more opaque bg */
+    backdrop-filter: blur(10px);
+    min-width: 600px; /* Adjust width as needed */
+    max-width: 700px;
+    box-shadow: 0 10px 25px rgba(138, 43, 226, 0.1); /* Dropdown shadow */
+    z-index: 1001;
+    padding: 25px 30px;
+    border-radius: var(--border-radius-soft);
+    border: 1px solid var(--border-color);
+    margin-top: 10px; /* Space between link and dropdown */
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none; /* Prevent interaction when hidden */
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s step-end;
+    transition-delay: 0s; /* Ensure visibility transition matches */
+}
+
+/* Styles for elements INSIDE the grid dropdowns */
+.main-nav .dropdown-content h4 {
+     font-size: 0.9rem; /* Use smaller font size like the target image */
+     color: var(--text-dark); /* Make headings darker like target */
+     margin-bottom: 12px;
+     border-bottom: 1px solid var(--border-color);
+     padding-bottom: 6px;
+     font-weight: 500; /* Less bold like target */
+     text-transform: none; /* No uppercase like target */
+     letter-spacing: normal; /* Normal spacing */
+ }
+ .main-nav .dropdown-content ul {
+     list-style: none;
+     padding: 0;
+     margin: 0;
+     /* Ensure no column-count styles interfere */
+     column-count: auto;
+     column-gap: normal;
+ }
+ .main-nav .dropdown-content ul li {
+     margin-bottom: 10px; /* Slightly more space like target */
+     /* Ensure no break-inside styles interfere */
+     break-inside: auto;
+     page-break-inside: auto;
+     -webkit-column-break-inside: auto;
+ }
+ .main-nav .dropdown-content ul a {
+     font-size: 0.9rem;
+     color: var(--text-medium);
+     font-weight: 400;
+     padding: 2px 0; /* Adjust padding */
+     display: block;
+     text-decoration: none;
+ }
+ .main-nav .dropdown-content ul a:hover {
+     color: var(--primary-vibrant); /* Use primary vibrant for hover */
+     background: none;
+     text-decoration: none;
+ }
+
+/* Hover/Focus to show dropdown */
+.main-nav .dropdown:hover .dropdown-content,
+.main-nav .dropdown > a:focus + .dropdown-content,
+.main-nav .dropdown-content:hover {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(0); /* Keep centering for the box */
+    transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s step-start;
+}
+
+/* Remove underline effect from ALL dropdown links */
+.main-nav .dropdown-content a::after { display: none; }
+
+
+/* --- Buttons (Glowing Effect - No Changes) --- */
 .cta-button {
     display: inline-block;
     padding: 12px 30px; /* Slightly larger padding */
@@ -275,13 +370,12 @@ figcaption.image-caption {
     opacity: 0.6;
 }
 
-
 .cta-button.large { padding: 16px 40px; font-size: 1.1rem; }
 .cta-button.small { padding: 8px 20px; font-size: 0.85rem; }
 
 .cta-button i { margin-left: 8px; font-size: 1em; }
 
-/* Mobile Menu (Mostly same structure, adjust colors/bg) */
+/* --- Mobile Menu --- */
 .mobile-menu-toggle { display: none; background: none; border: none; cursor: pointer; padding: 5px; z-index: 1100; }
 .icon-bar { display: block; width: 25px; height: 3px; background-color: var(--primary-vibrant); margin: 5px 0; transition: transform 0.3s ease, opacity 0.3s ease; border-radius: 1px; }
 .mobile-menu-toggle.active .icon-bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -292,15 +386,61 @@ figcaption.image-caption {
     display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%;
     background-color: rgba(253, 252, 255, 0.95); /* Slightly more opaque */
     backdrop-filter: blur(15px) saturate(180%);
-    z-index: 999; padding-top: 80px; text-align: center;
+    z-index: 999; padding-top: 80px; padding-bottom: 40px; /* Add bottom padding */
+    text-align: left; /* Align text left */
     opacity: 0; transform: translateY(-10px);
     transition: opacity 0.3s ease, transform 0.3s ease; overflow-y: auto;
 }
 .mobile-nav.active { display: block; opacity: 1; transform: translateY(0); }
-.mobile-nav ul { padding: 20px; }
-.mobile-nav li { margin-bottom: 25px; }
-.mobile-nav a { font-size: 1.4rem; font-weight: 500; color: var(--primary-vibrant); }
+.mobile-nav ul { padding: 0 20px; /* Adjust padding */ }
+.mobile-nav li { margin-bottom: 15px; /* Adjust spacing */ list-style: none; }
+.mobile-nav a {
+    font-size: 1.2rem; /* Adjust size */
+    font-weight: 500;
+    color: var(--primary-vibrant);
+    display: block; /* Make link take full width */
+    padding: 8px 0; /* Add vertical padding */
+}
 .mobile-nav a:hover { color: var(--secondary-vibrant); }
+
+/* --- Mobile Nav Dropdowns (NEW) --- */
+.mobile-nav .has-submenu > a {
+    display: flex;
+    justify-content: space-between; /* Icon on the right */
+    align-items: center;
+}
+.mobile-nav .has-submenu > a i {
+    transition: transform var(--transition-fast) ease;
+    font-size: 0.8em; /* Smaller icon */
+    color: var(--text-medium); /* Subtler icon color */
+}
+.mobile-nav .has-submenu > a.submenu-open i {
+    transform: rotate(180deg);
+}
+.mobile-nav .submenu {
+    list-style: none;
+    padding-left: 20px; /* Indent submenu */
+    margin-top: 8px;
+    display: none; /* Hidden by default */
+    max-height: 0; /* For smooth transition */
+    overflow: hidden; /* For smooth transition */
+    transition: max-height 0.3s ease-out; /* Smooth transition */
+}
+.mobile-nav .submenu.active {
+    display: block;
+    max-height: 1000px; /* Arbitrarily large height for transition */
+    transition: max-height 0.5s ease-in;
+}
+.mobile-nav .submenu li { margin-bottom: 5px; /* Smaller margin */ }
+.mobile-nav .submenu li a {
+    font-size: 1rem; /* Smaller font size for submenu items */
+    color: var(--text-medium);
+    font-weight: 400;
+    padding: 5px 0; /* Adjust padding */
+}
+.mobile-nav .submenu li a:hover {
+    color: var(--secondary-vibrant);
+}
 
 
 /* --- Hero Section --- */
@@ -365,7 +505,31 @@ figcaption.image-caption {
 }
 .post-meta span, .post-meta div { display: inline-block; margin-right: 15px; vertical-align: middle; }
 .post-meta i { margin-right: 5px; color: var(--primary-vibrant); opacity: 0.8; }
+.post-authors { line-height: 1.6; } /* Improve spacing */
 .post-authors span { margin-right: 5px; }
+/* Make author links look like normal text until hovered */
+.post-authors a {
+    color: var(--primary-vibrant); /* Keep link color */
+    text-decoration: none; /* Remove underline */
+    border-bottom: 1px dashed var(--border-color); /* Subtle indicator */
+    padding-bottom: 1px; /* Space for border */
+}
+.post-authors a:hover {
+    color: var(--secondary-vibrant); /* Highlight on hover */
+    border-bottom-style: solid;
+}
+/* Specific style for placeholder links */
+.post-authors a[href="link_placeholder"] {
+    color: var(--text-medium) !important; /* Inherit text color - use a specific color */
+    cursor: default !important; /* Non-clickable cursor */
+    border-bottom: 1px dashed var(--text-medium) !important; /* Dashed border like text */
+}
+.post-authors a[href="link_placeholder"]:hover {
+    color: var(--text-medium) !important; /* No color change on hover */
+    border-bottom-style: dashed !important; /* Keep dashed on hover */
+}
+
+
 
 .hero-description {
     font-size: 1.15rem; /* Slightly larger */
@@ -409,6 +573,7 @@ figcaption.image-caption {
 }
 .pattern-bg > .container { position: relative; z-index: 1; } /* Ensure content is above pattern */
 
+.section-title { position: relative; display: inline-block;} /* Needed for positioning after */
 .section-title.gradient-text {
     background: var(--gradient-text);
     -webkit-background-clip: text;
@@ -427,6 +592,7 @@ figcaption.image-caption {
     border-radius: 2px;
     transition: width var(--transition-medium) ease;
 }
+.section-title.text-center { display: block; } /* Make block for centering */
 .section-title.text-center::after { left: 50%; transform: translateX(-50%); }
 .content-section:hover .section-title::after { width: 100px; } /* Animate underline on section hover */
 
@@ -451,7 +617,7 @@ figcaption.image-caption {
 /* --- Principles Section (Vibrant Cards) --- */
 .principles-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-template-columns: repeat(5, 1fr); /* 5 cột cố định */
     gap: 30px;
     margin-top: 2rem;
 }
@@ -512,7 +678,7 @@ figcaption.image-caption {
 .stylish-list li {
     margin-bottom: 1.2rem; /* More space */
     position: relative;
-    padding-left: 35px; /* More space for icon */
+    padding-left: 40px; /* More space for icon */
     color: var(--text-medium);
     font-size: 0.95rem;
 }
@@ -520,10 +686,10 @@ figcaption.image-caption {
     position: absolute;
     left: 0;
     top: 0px; /* Adjust vertical alignment */
-    font-size: 1.3rem;
-    width: 25px;
-    height: 25px;
-    line-height: 25px;
+    font-size: 1.4rem; /* Slightly larger icon */
+    width: 30px; /* Slightly larger container */
+    height: 30px;
+    line-height: 30px;
     text-align: center;
     border-radius: 50%;
     background: linear-gradient(135deg, var(--accent-vibrant-1), var(--secondary-vibrant));
@@ -531,7 +697,7 @@ figcaption.image-caption {
     box-shadow: 0 2px 5px rgba(255, 105, 180, 0.3);
 }
 .how-it-works-text strong { color: var(--text-dark); font-weight: 500; }
-.link-arrow.vibrant-link i { transition: transform var(--transition-fast) ease; }
+.link-arrow.vibrant-link i { transition: transform var(--transition-fast) ease; margin-left: 4px;}
 .link-arrow.vibrant-link:hover i { transform: translateX(6px); }
 
 /* --- Use Case Section --- */
@@ -546,7 +712,7 @@ figcaption.image-caption {
     cursor: pointer;
     transition: transform var(--transition-medium) ease, box-shadow var(--transition-medium) ease;
     border: 1px solid var(--border-color);
-    min-height: 200px;
+    min-height: 250px; /* Adjust height */
     display: flex; flex-direction: column; justify-content: center; align-items: center;
     position: relative; overflow: hidden;
     box-shadow: 0 5px 15px rgba(138, 43, 226, 0.05);
@@ -641,14 +807,20 @@ figcaption.image-caption {
 .vibrant-cta .cta-buttons .glowing-button.secondary {
     background-color: transparent;
     color: var(--text-light);
-    border-color: rgba(255,255,255, 0.7); /* Make border visible */
+    border: 2px solid rgba(255,255,255, 0.7); /* Make border visible */
 }
-.vibrant-cta .cta-buttons .glowing-button.secondary::after { background: linear-gradient(90deg, #fff, #ffeb3b); } /* Yellowish gradient border */
-.vibrant-cta .cta-buttons .glowing-button.secondary::before { background: linear-gradient(90deg, #fff, #ffeb3b); }
 .vibrant-cta .cta-buttons .glowing-button.secondary:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    border-color: transparent; /* Hide solid border, rely on gradient */
+    border-color: rgba(255,255,255, 0.9);
 }
+/* Remove gradient border/glow specifics if not needed for CTA secondary */
+.vibrant-cta .cta-buttons .glowing-button.secondary::before {
+    opacity: 0; /* Disable glow by default for this specific button */
+}
+.vibrant-cta .cta-buttons .glowing-button.secondary:hover::before {
+    opacity: 0; /* Keep glow disabled on hover too */
+}
+
 
 /* --- Post End Content --- */
 .post-end-content { padding: 40px 0; border-top: 1px solid var(--border-color); margin-top: 40px; }
@@ -662,7 +834,7 @@ figcaption.image-caption {
     border-radius: var(--border-radius-round);
     margin-right: 10px; margin-bottom: 10px;
     font-size: 0.85rem; font-weight: 500;
-    transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease;
+    transition: transform var(--transition-fast) ease, box-shadow var(--transition-fast) ease, background var(--transition-fast) ease, color var(--transition-fast) ease, border-color var(--transition-fast) ease;
     border: 1px solid var(--border-color);
 }
 .post-tags a:hover {
@@ -675,23 +847,27 @@ figcaption.image-caption {
 }
 
 .post-navigation { display: flex; justify-content: space-between; font-weight: 500; }
-.post-navigation a.vibrant-link { font-size: 1rem; }
+.post-navigation a.vibrant-link { font-size: 1rem; display: inline-flex; align-items: center;}
 .post-navigation a.vibrant-link i { transition: transform var(--transition-fast) ease; }
-.post-navigation a.vibrant-link:hover i { transform: translateX(5px); }
-.prev-post i { margin-right: 5px; }
-.next-post i { margin-left: 5px; }
+.prev-post i { margin-right: 8px; }
+.next-post i { margin-left: 8px; }
+.post-navigation a.vibrant-link.prev-post:hover i { transform: translateX(-5px); }
+.post-navigation a.vibrant-link.next-post:hover i { transform: translateX(5px); }
+
 
 /* --- Related Posts Section --- */
 .related-posts-section { padding: 80px 0; }
 .related-posts-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 2rem; }
-.related-post-card.vibrant-card { padding: 0; /* Remove padding, apply to content */ overflow: hidden; } /* Reuse vibrant-card */
+.related-post-card.vibrant-card { padding: 0; /* Remove padding, apply to content */ overflow: hidden; text-decoration: none;} /* Reuse vibrant-card */
+.related-post-card.vibrant-card:hover { text-decoration: none; } /* Ensure no underline on card hover */
 .related-post-image { width: 100%; height: 180px; object-fit: cover; flex-shrink: 0; border-bottom: 1px solid var(--border-color); transition: transform var(--transition-medium) ease; }
 .related-post-card:hover .related-post-image { transform: scale(1.05); }
 .related-post-content { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
 .related-post-category { display: inline-block; font-size: 0.8rem; color: var(--secondary-vibrant); margin-bottom: 0.5rem; text-transform: uppercase; font-weight: 700; letter-spacing: 0.5px; }
 .related-post-card h3 { font-size: 1.1rem; margin-bottom: 0.75rem; color: var(--text-dark); line-height: 1.4; }
 .related-post-date { font-size: 0.85rem; color: var(--text-medium); margin-bottom: 1rem; opacity: 0.8;}
-.read-more.vibrant-link { font-weight: 700; font-size: 0.9rem; margin-top: auto; padding-top: 10px; }
+.read-more.vibrant-link { font-weight: 700; font-size: 0.9rem; margin-top: auto; padding-top: 10px; display: inline-flex; align-items: center; }
+.read-more.vibrant-link i { margin-left: 5px; }
 
 /* --- Footer --- */
 .site-footer.vibrant-footer { /* New footer style */
@@ -731,12 +907,16 @@ figcaption.image-caption {
     background: transparent;
     border-color: rgba(255,255,255, 0.4);
     color: rgba(255, 255, 255, 0.7);
+    border-width: 1px; /* Explicit border */
 }
 .vibrant-footer .manage-cookies-button:hover {
     background: rgba(255, 255, 255, 0.1);
     border-color: rgba(255,255,255, 0.8);
     color: var(--text-light);
 }
+/* Ensure footer button glow is consistent */
+.vibrant-footer .glowing-button.secondary::before { opacity: 0; }
+.vibrant-footer .glowing-button.secondary:hover::before { opacity: 0; }
 
 
 .footer-bottom { border-top: 1px solid rgba(255, 255, 255, 0.1); padding: 25px 0; }
@@ -773,10 +953,13 @@ figcaption.image-caption {
 .delay-5 { transition-delay: 0.4s; }
 
 
-/* --- Responsive --- (Giữ nguyên các breakpoint, style bên trong sẽ tự điều chỉnh) */
+/* --- Responsive --- */
 @media (max-width: 1024px) {
+    .main-nav ul { gap: 20px; } /* Reduce gap */
+    .main-nav .dropdown-content { min-width: 550px; grid-template-columns: repeat(2, 1fr); } /* Reduce grid columns */
     .footer-content { grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
 }
+
 @media (max-width: 992px) {
     h1 { font-size: 2.5rem; } h2 { font-size: 1.8rem; }
     .hero-title.hero-gradient-text { font-size: 2.8rem; }
@@ -787,14 +970,15 @@ figcaption.image-caption {
     .post-authors span { display: block; margin-bottom: 5px;}
     .hero-description { margin-left: auto; margin-right: auto;}
     .hero-buttons { text-align: center; }
-    .main-nav { display: none; }
-    .mobile-menu-toggle { display: block; }
+    .main-nav { display: none; } /* Hide desktop nav */
+    .mobile-menu-toggle { display: block; } /* Show mobile toggle */
     .two-columns { flex-direction: column; }
     .how-it-works-layout { flex-direction: column; }
     .how-it-works-image { max-width: 80%; margin-bottom: 30px;}
     .use-case-content { flex-direction: column; }
     .partner-feedback-grid { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 }
+
 @media (max-width: 768px) {
     .container { padding: 0 15px; }
     .content-section { padding: 60px 0; }
@@ -804,11 +988,96 @@ figcaption.image-caption {
     .principles-grid { grid-template-columns: 1fr; }
     .partner-feedback-grid { grid-template-columns: 1fr; }
     .related-posts-grid { grid-template-columns: 1fr; }
-    .footer-content { grid-template-columns: 1fr; text-align: center; }
-    .footer-column h4 { text-align: center;}
-    .footer-column h4::after { left: 50%; transform: translateX(-50%); }
+    .main-nav .dropdown-content { grid-template-columns: repeat(2, 1fr); } /* Still 2 columns */
+    .footer-content { grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 20px; } /* Adjust footer columns */
+    .footer-column h4 { text-align: left;} /* Align left on mobile */
+    .footer-column h4::after { left: 0; transform: none; } /* Reset underline position */
     .footer-column ul { padding-left: 0; }
-    .footer-bottom-container { flex-direction: column; gap: 15px;}
+    .footer-bottom-container { flex-direction: column; gap: 15px; text-align: center;}
     .footer-legal-links { margin-top: 10px; text-align: center;}
     .footer-legal-links a { margin: 0 8px; }
+    .post-navigation { flex-direction: column; align-items: center; gap: 10px; }
+    .post-navigation a { width: 100%; text-align: center; justify-content: center;}
+}
+
+@media (max-width: 480px) {
+    .hero-title.hero-gradient-text { font-size: 2.1rem; }
+    .hero-description { font-size: 1.05rem; }
+    .main-nav .dropdown-content { grid-template-columns: 1fr; } /* Single column on very small screens */
+    .footer-content { grid-template-columns: 1fr; text-align: center; } /* Single column footer */
+    .footer-column h4 { text-align: center; }
+    .footer-column h4::after { left: 50%; transform: translateX(-50%); }
+    .post-tags a { font-size: 0.8rem; padding: 5px 12px; }
+     /* Adjust dropdown positioning slightly on small screens if centered */
+    .main-nav .dropdown-content {
+         min-width: 90vw; /* Use viewport width */
+         max-width: 95vw;
+         left: 50%;
+         transform: translateX(-50%) translateY(10px);
+     }
+     .main-nav .dropdown:hover .dropdown-content,
+     .main-nav .dropdown > a:focus + .dropdown-content,
+     .main-nav .dropdown-content:hover {
+         transform: translateX(-50%) translateY(0);
+     }
+}
+/* Fix layout cho dropdown Products */
+.main-nav .product-dropdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.main-nav .product-dropdown > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav .product-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.main-nav .product-dropdown ul li a {
+    white-space: nowrap; /* Không cho xuống dòng giữa từ */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Nếu quá dài thì hiển thị ... */
+}
+/* Fix layout cho dropdown Community */
+.main-nav .community-dropdown {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.main-nav .community-dropdown > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-nav .community-dropdown ul {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex-wrap: nowrap;
+}
+
+.main-nav .community-dropdown ul li a {
+    white-space: nowrap; /* Không xuống dòng */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.video-wrapper {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 16px;
+}
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: inherit;
 }

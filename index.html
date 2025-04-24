@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A2A Protocol: Kỷ nguyên mới của Tương tác Tác tử AI</title>
-    <link rel="stylesheet" href="style.css"> <!-- Link đến file CSS mới -->
+    <link rel="stylesheet" href="style.css"> <!-- Link đến file CSS -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,19 +12,94 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="vibrant-background"></div> <!-- Background mới -->
-    <div class="noise-overlay"></div> <!-- Lớp nhiễu tạo texture -->
+    <div class="vibrant-background"></div> <!-- Background -->
+    <div class="noise-overlay"></div> <!-- Lớp nhiễu -->
 
+    <!-- ===== HEADER ===== -->
     <header class="site-header">
         <div class="container header-container">
-            <a href="#" class="logo logo-gradient">A2A<span>.</span></a> <!-- Thêm class logo-gradient -->
+            <a href="#" class="logo logo-gradient">A2A<span></span></a> <!-- Giữ logo A2A -->
             <nav class="main-nav">
                 <ul>
-                    <li><a href="#introduction">Giới thiệu</a></li>
-                    <li><a href="#principles">Nguyên tắc</a></li>
-                    <li><a href="#how-it-works">Cách hoạt động</a></li>
-                    <li><a href="#partners">Đối tác</a></li>
-                    <li><a href="#learn-more">Tìm hiểu thêm</a></li>
+                    <li class="dropdown">
+                        <a href="https://developers.google.com/products" target="_blank" rel="noopener noreferrer">Products <i class="fas fa-chevron-down"></i></a>
+                        <!-- ===== PRODUCT DROPDOWN HTML (Grid Structure) ===== -->
+                        <div class="dropdown-content product-dropdown">
+                            <div> <!-- Column 1: Develop -->
+                                <h4>Develop</h4>
+                                <ul>
+                                    <li><a href="https://developer.android.com" target="_blank" rel="noopener noreferrer">Android</a></li>
+                                    <li><a href="https://developer.chrome.com" target="_blank" rel="noopener noreferrer">Chrome</a></li>
+                                    <li><a href="https://chromeos.dev/" target="_blank" rel="noopener noreferrer">ChromeOS</a></li>
+                                    <li><a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">Cloud</a></li>
+                                    <li><a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+                                    <li><a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">Flutter</a></li>
+                                    <li><a href="https://developers.google.com/assistant" target="_blank" rel="noopener noreferrer">Google Assistant</a></li>
+                                    <li><a href="https://developers.google.com/maps" target="_blank" rel="noopener noreferrer">Google Maps Platform</a></li>
+                                    <li><a href="https://developers.google.com/workspace" target="_blank" rel="noopener noreferrer">Google Workspace</a></li>
+                                    <li><a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">TensorFlow</a></li>
+                                    <li><a href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                                </ul>
+                            </div>
+                            <div> <!-- Column 2: Grow -->
+                                <h4>Grow</h4>
+                                <ul>
+                                    <li><a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+                                    <li><a href="https://developers.google.com/google-ads" target="_blank" rel="noopener noreferrer">Google Ads</a></li>
+                                    <li><a href="https://developers.google.com/analytics" target="_blank" rel="noopener noreferrer">Google Analytics</a></li>
+                                    <li><a href="https://developer.android.com/distribute" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+                                    <li><a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer">Search</a></li>
+                                    <li><a href="https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications" target="_blank" rel="noopener noreferrer">Web Push and Notification APIs</a></li>
+                                </ul>
+                            </div>
+                            <div> <!-- Column 3: Earn -->
+                                <h4>Earn</h4>
+                                <ul>
+                                    <li><a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+                                    <li><a href="https://developers.google.com/google-ads/api" target="_blank" rel="noopener noreferrer">Google Ads API</a></li>
+                                    <li><a href="https://developers.google.com/pay" target="_blank" rel="noopener noreferrer">Google Pay</a></li>
+                                    <li><a href="https://developer.android.com/google/play/billing/" target="_blank" rel="noopener noreferrer">Google Play Billing</a></li>
+                                    <li><a href="https://developers.google.com/interactive-media-ads" target="_blank" rel="noopener noreferrer">Interactive Media Ads</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ===== END OF PRODUCT DROPDOWN HTML ===== -->
+                    </li>
+                    <li><a href="https://developers.google.com/solutions/catalog" target="_blank" rel="noopener noreferrer">Solutions</a></li>
+                    <li><a href="https://developers.google.com/events" target="_blank" rel="noopener noreferrer">Events</a></li>
+                    <li><a href="https://developers.google.com/learn" target="_blank" rel="noopener noreferrer">Learn</a></li>
+                    <li class="dropdown">
+                        <a href="https://developers.google.com/community" target="_blank" rel="noopener noreferrer">Community <i class="fas fa-chevron-down"></i></a>
+                        <!-- Community dropdown (Grid Structure) -->
+                        <div class="dropdown-content community-dropdown">
+                             <div>
+                                <h4>Groups</h4>
+                                <ul>
+                                    <li><a href="https://developers.google.com/community/gdg" target="_blank" rel="noopener noreferrer">Google Developer Groups</a></li>
+                                    <li><a href="https://developers.google.com/community/gdsc" target="_blank" rel="noopener noreferrer">Google Developer Student Clubs</a></li>
+                                    <li><a href="https://developers.google.com/womentechmakers" target="_blank" rel="noopener noreferrer">Woman Techmakers</a></li>
+                                    <li><a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developer Experts</a></li>
+                                    <li><a href="https://www.techequitycollective.com/" target="_blank" rel="noopener noreferrer">Tech Equity Collective</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Programs</h4>
+                                <ul>
+                                    <li><a href="https://developers.google.com/community/accelerators" target="_blank" rel="noopener noreferrer">Accelerator</a></li>
+                                    <li><a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank" rel="noopener noreferrer">Solution Challenge</a></li>
+                                    <li><a href="https://developers.google.com/community/devfest" target="_blank" rel="noopener noreferrer">DevFest</a></li>
+                                </ul>
+                            </div>
+                            <div>
+                                <h4>Stories</h4>
+                                <ul>
+                                    <li><a href="https://developers.google.com/community/stories" target="_blank" rel="noopener noreferrer">All Stories</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="https://developers.google.com/profile/u/me" target="_blank" rel="noopener noreferrer">Developer Program</a></li>
+                    <li><a href="https://developers.googleblog.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
                 </ul>
             </nav>
             <button class="mobile-menu-toggle" aria-label="Mở menu">
@@ -34,15 +109,67 @@
             </button>
         </div>
     </header>
+
+     <!-- ===== MOBILE NAV ===== -->
      <nav class="mobile-nav">
         <ul>
+             <!-- Các link gốc của A2A -->
             <li><a href="#introduction">Giới thiệu</a></li>
             <li><a href="#principles">Nguyên tắc</a></li>
             <li><a href="#how-it-works">Cách hoạt động</a></li>
             <li><a href="#partners">Đối tác</a></li>
             <li><a href="#learn-more">Tìm hiểu thêm</a></li>
+             <!-- Divider hoặc cách phân biệt khác -->
+            <li style="margin: 20px 0; border-top: 1px solid var(--border-color);"></li>
+            <!-- Menu từ Google Dev -->
+            <li class="has-submenu"> <!-- Add class for JS detection -->
+                 <a href="https://developers.google.com/products" target="_blank" rel="noopener noreferrer">Products <i class="fas fa-chevron-down"></i></a>
+                 <ul class="submenu"> <!-- Submenu -->
+                    <li><a href="https://developer.android.com" target="_blank" rel="noopener noreferrer">Android</a></li>
+                    <li><a href="https://developer.chrome.com" target="_blank" rel="noopener noreferrer">Chrome</a></li>
+                    <li><a href="https://chromeos.dev/" target="_blank" rel="noopener noreferrer">ChromeOS</a></li>
+                    <li><a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">Cloud</a></li>
+                    <li><a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase</a></li>
+                    <li><a href="https://flutter.dev" target="_blank" rel="noopener noreferrer">Flutter</a></li>
+                    <li><a href="https://developers.google.com/assistant" target="_blank" rel="noopener noreferrer">Google Assistant</a></li>
+                    <li><a href="https://developers.google.com/maps" target="_blank" rel="noopener noreferrer">Google Maps Platform</a></li>
+                    <li><a href="https://developers.google.com/workspace" target="_blank" rel="noopener noreferrer">Google Workspace</a></li>
+                    <li><a href="https://www.tensorflow.org" target="_blank" rel="noopener noreferrer">TensorFlow</a></li>
+                    <li><a href="https://developers.google.com/youtube" target="_blank" rel="noopener noreferrer">YouTube</a></li>
+                    <li><a href="https://developers.google.com/google-ads" target="_blank" rel="noopener noreferrer">Google Ads</a></li>
+                    <li><a href="https://developers.google.com/analytics" target="_blank" rel="noopener noreferrer">Google Analytics</a></li>
+                    <li><a href="https://developer.android.com/distribute" target="_blank" rel="noopener noreferrer">Google Play</a></li>
+                    <li><a href="https://developers.google.com/search" target="_blank" rel="noopener noreferrer">Search</a></li>
+                    <li><a href="https://developers.google.com/web/fundamentals/engage-and-retain/push-notifications" target="_blank" rel="noopener noreferrer">Web Push APIs</a></li>
+                    <li><a href="https://developers.google.com/admob" target="_blank" rel="noopener noreferrer">AdMob</a></li>
+                    <li><a href="https://developers.google.com/google-ads/api" target="_blank" rel="noopener noreferrer">Google Ads API</a></li>
+                    <li><a href="https://developers.google.com/pay" target="_blank" rel="noopener noreferrer">Google Pay</a></li>
+                    <li><a href="https://developer.android.com/google/play/billing/" target="_blank" rel="noopener noreferrer">Google Play Billing</a></li>
+                    <li><a href="https://developers.google.com/interactive-media-ads" target="_blank" rel="noopener noreferrer">Interactive Media Ads</a></li>
+                 </ul>
+            </li>
+            <li><a href="https://developers.google.com/solutions/catalog" target="_blank" rel="noopener noreferrer">Solutions</a></li>
+            <li><a href="https://developers.google.com/events" target="_blank" rel="noopener noreferrer">Events</a></li>
+            <li><a href="https://developers.google.com/learn" target="_blank" rel="noopener noreferrer">Learn</a></li>
+            <li class="has-submenu"> <!-- Add class for JS detection -->
+                <a href="https://developers.google.com/community" target="_blank" rel="noopener noreferrer">Community <i class="fas fa-chevron-down"></i></a>
+                <ul class="submenu"> <!-- Submenu -->
+                    <li><a href="https://developers.google.com/community/gdg" target="_blank" rel="noopener noreferrer">Google Developer Groups</a></li>
+                    <li><a href="https://developers.google.com/community/gdsc" target="_blank" rel="noopener noreferrer">Google Developer Student Clubs</a></li>
+                    <li><a href="https://developers.google.com/womentechmakers" target="_blank" rel="noopener noreferrer">Woman Techmakers</a></li>
+                    <li><a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer">Google Developer Experts</a></li>
+                    <li><a href="https://www.techequitycollective.com/" target="_blank" rel="noopener noreferrer">Tech Equity Collective</a></li>
+                    <li><a href="https://developers.google.com/community/accelerators" target="_blank" rel="noopener noreferrer">Accelerator</a></li>
+                    <li><a href="https://developers.google.com/community/gdsc-solution-challenge" target="_blank" rel="noopener noreferrer">Solution Challenge</a></li>
+                    <li><a href="https://developers.google.com/community/devfest" target="_blank" rel="noopener noreferrer">DevFest</a></li>
+                     <li><a href="https://developers.google.com/community/stories" target="_blank" rel="noopener noreferrer">All Stories</a></li>
+                </ul>
+            </li>
+            <li><a href="https://developers.google.com/profile/u/me" target="_blank" rel="noopener noreferrer">Developer Program</a></li>
+            <li><a href="https://developers.googleblog.com/" target="_blank" rel="noopener noreferrer">Blog</a></li>
         </ul>
     </nav>
+    <!-- ===== END OF HEADER/NAV ===== -->
 
     <main>
         <section id="hero" class="hero-section">
@@ -58,10 +185,11 @@
                          <span class="post-date"><i class="far fa-calendar-alt"></i> NGÀY 9 THÁNG 4 NĂM 2025</span>
                          <div class="post-authors">
                              <i class="fas fa-users"></i> Tác giả:
-                            <span>[Rao Surapaneni](link_placeholder) VP & GM Business Application Platform</span>,
-                            <span>[Miku Jha](link_placeholder) Director, AI/ML Partner Engineering Google Cloud</span>,
-                            <span>[Michael Vakoc](link_placeholder) Product Manager Google Cloud</span>,
-                            <span>[Todd Segal](link_placeholder) Principal Engineer Business Application Platform</span>
+                             <!-- Sửa lại cách hiển thị tác giả -->
+                            <span><a href="link_placeholder">Rao Surapaneni</a> VP & GM Business Application Platform</span>,
+                            <span><a href="link_placeholder">Miku Jha</a> Director, AI/ML Partner Engineering Google Cloud</span>,
+                            <span><a href="link_placeholder">Michael Vakoc</a> Product Manager Google Cloud</span>,
+                            <span><a href="link_placeholder">Todd Segal</a> Principal Engineer Business Application Platform</span>
                          </div>
                     </div>
                     <p class="hero-description animate-on-scroll fade-in-up delay-3">Mở khóa tiềm năng của các tác tử AI (AI agents) làm việc cùng nhau một cách liền mạch, an toàn và hiệu quả trên mọi nền tảng.</p>
@@ -77,7 +205,6 @@
         </section>
 
         <!-- Các section còn lại giữ nguyên cấu trúc HTML như phiên bản trước -->
-        <!-- Chỉ cần CSS mới sẽ áp dụng style khác -->
 
         <section id="introduction" class="content-section alt-bg">
             <div class="container section-container">
@@ -100,12 +227,11 @@
             </div>
         </section>
 
-        <section id="principles" class="content-section pattern-bg"> <!-- Thêm pattern-bg -->
+        <section id="principles" class="content-section pattern-bg">
             <div class="container section-container">
                 <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Nguyên tắc Thiết kế Cốt lõi của A2A</h2>
                 <p class="section-description text-center animate-on-scroll fade-in">A2A là một giao thức mở cung cấp một cách tiêu chuẩn để các tác tử cộng tác với nhau, bất kể khung hoặc nhà cung cấp cơ bản nào. Trong quá trình thiết kế giao thức với các đối tác của mình, chúng tôi đã tuân thủ năm nguyên tắc chính:</p>
                 <div class="principles-grid">
-                    <!-- Thêm class 'vibrant-card' -->
                     <div class="principle-card vibrant-card animate-on-scroll pop-in">
                         <div class="principle-icon"><i class="fas fa-brain"></i></div>
                         <h3>Nắm bắt Khả năng Tác tử (Embrace agentic capabilities)</h3>
@@ -145,7 +271,7 @@
                      </div>
                      <div class="how-it-works-text animate-on-scroll fade-in-right">
                          <p>A2A tạo điều kiện giao tiếp giữa tác tử "khách hàng" (client agent) và tác tử "từ xa" (remote agent). Tác tử khách hàng chịu trách nhiệm xây dựng và truyền đạt các tác vụ (tasks), trong khi tác tử từ xa chịu trách nhiệm hành động theo các tác vụ đó nhằm cố gắng cung cấp thông tin chính xác hoặc thực hiện hành động chính xác. Sự tương tác này bao gồm một số khả năng chính:</p>
-                         <ul class="stylish-list"> <!-- Thêm class stylish-list -->
+                         <ul class="stylish-list">
                             <li><i class="fas fa-search-location list-icon"></i><strong>Khám phá khả năng (Capability discovery):</strong> Các tác tử có thể quảng cáo khả năng của mình bằng cách sử dụng "Thẻ Tác tử" (Agent Card) ở định dạng JSON, cho phép tác tử khách hàng xác định tác tử tốt nhất có thể thực hiện một tác vụ và tận dụng A2A để giao tiếp với tác tử từ xa.</li>
                             <li><i class="fas fa-tasks list-icon"></i><strong>Quản lý tác vụ (Task management):</strong> Việc giao tiếp giữa tác tử khách hàng và tác tử từ xa được định hướng theo hướng hoàn thành tác vụ, trong đó các tác tử làm việc để đáp ứng yêu cầu của người dùng cuối (end-user requests). "Tác vụ" (task) này được xác định bởi giao thức và có một vòng đời (lifecycle). Nó có thể được hoàn thành ngay lập tức hoặc, đối với các tác vụ chạy dài (long-running tasks), mỗi tác tử có thể giao tiếp để giữ đồng bộ (sync) với nhau về trạng thái mới nhất của việc hoàn thành tác vụ. Đầu ra của một tác vụ được gọi là "hiện vật" (artifact).</li>
                             <li><i class="fas fa-comments list-icon"></i><strong>Cộng tác (Collaboration):</strong> Các tác tử có thể gửi tin nhắn (messages) cho nhau để truyền đạt ngữ cảnh (context), phản hồi (replies), hiện vật (artifacts), hoặc hướng dẫn người dùng (user instructions).</li>
@@ -164,17 +290,18 @@
                      <div class="use-case-text animate-on-scroll fade-in-left">
                          <p>Việc tuyển dụng một kỹ sư phần mềm (software engineer) có thể được đơn giản hóa đáng kể với sự cộng tác của A2A. Trong một giao diện thống nhất như Agentspace, người dùng (ví dụ: người quản lý tuyển dụng - hiring manager) có thể giao nhiệm vụ cho tác tử của họ tìm kiếm các ứng viên phù hợp với mô tả công việc (job listing), địa điểm (location), và bộ kỹ năng (skill set).</p>
                          <p>Tác tử sau đó tương tác với các tác tử chuyên biệt khác để tìm nguồn ứng viên tiềm năng. Người dùng nhận được những đề xuất này và sau đó có thể chỉ đạo tác tử của họ lên lịch phỏng vấn thêm, hợp lý hóa quy trình tìm nguồn ứng viên. Sau khi quá trình phỏng vấn hoàn tất, một tác tử khác có thể được tham gia để hỗ trợ kiểm tra lý lịch (background checks). Đây chỉ là một ví dụ về cách các tác tử AI cần cộng tác giữa các hệ thống để tìm nguồn ứng viên đủ điều kiện cho công việc.</p>
-                     </div>
-                     <div class="video-placeholder stylish-placeholder animate-on-scroll scale-in-right delay-1"> <!-- Thêm class stylish-placeholder -->
-                        <i class="fas fa-play-circle video-icon"></i>
-                         <p>Rất tiếc, trình duyệt của bạn không hỗ trợ phát lại video này</p>
-                         <span>(Nhấp chuột phải để xem trong tab mới - Nội dung video gốc không có sẵn)</span>
-                    </div>
+                     </div>  
+                </div>
+                <div class="video-wrapper animate-on-scroll scale-in-right delay-1">
+                    <video controls preload="metadata" width="100%" style="border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+                        <source src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/original_videos/A2A_demo_v4.mp4" type="video/mp4">
+                        Trình duyệt của bạn không hỗ trợ phát video.
+                    </video>
                 </div>
              </div>
         </section>
 
-        <section id="future" class="content-section alt-bg pattern-bg"> <!-- Thêm pattern-bg -->
+        <section id="future" class="content-section alt-bg pattern-bg">
              <div class="container section-container text-center">
                  <h2 class="section-title gradient-text animate-on-scroll fade-in">Tương lai của Khả năng tương tác Tác tử</h2>
                  <p class="section-description animate-on-scroll fade-in delay-1">A2A có tiềm năng mở ra một kỷ nguyên mới về khả năng tương tác của tác tử, thúc đẩy sự đổi mới và tạo ra các hệ thống tác tử (agentic systems) mạnh mẽ và linh hoạt hơn. Chúng tôi tin rằng giao thức này sẽ mở đường cho một tương lai nơi các tác tử có thể cộng tác liền mạch để giải quyết các vấn đề phức tạp và nâng cao cuộc sống của chúng ta.</p>
@@ -191,7 +318,6 @@
                 <div class="partner-feedback-container">
                     <h3 class="subsection-title gradient-text animate-on-scroll fade-in">Đối tác Công nghệ & Nền tảng (Technology & Platform Partners)</h3>
                     <div class="partner-feedback-grid">
-                        <!-- Sử dụng class 'vibrant-card' và animation 'pop-in' -->
                         <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Ask-AI rất vui mừng được hợp tác với Google về giao thức A2A, định hình tương lai của khả năng tương tác AI và sự cộng tác liền mạch của tác tử, thúc đẩy vị trí dẫn đầu của mình trong lĩnh vực AI doanh nghiệp cho Trải nghiệm khách hàng (Customer Experience)."</p>
                             <cite>– CEO Alon Talmor PhD, <strong>ask-ai.com</strong></cite>
@@ -208,7 +334,6 @@
                             <p class="quote">"Arize AI tự hào hợp tác với Google với tư cách là đối tác ra mắt cho giao thức tương tác A2A, thúc đẩy tương tác liền mạch, an toàn giữa các tác tử AI như một phần trong cam kết của Arize đối với các khung đánh giá (evaluation) và khả năng quan sát (observability) mã nguồn mở."</p>
                             <cite>– Jason Lopatecki, Cofounder & CEO, <strong>Arize AI</strong></cite>
                         </div>
-                        <!-- ...Thêm các thẻ feedback khác với class 'vibrant-card' và 'pop-in' + delay -->
                          <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                              <p class="quote">"BCG giúp thiết kế lại các tổ chức với trí thông minh làm cốt lõi. Các khả năng mở và có thể tương tác như A2A có thể đẩy nhanh quá trình này, cho phép tạo ra lợi thế cạnh tranh bền vững, tự trị (autonomous competitive advantage)."</p>
                              <cite>– Djon Kleine, Managing Director & Partner at <strong>BCG</strong></cite>
@@ -337,7 +462,6 @@
 
                     <h3 class="subsection-title gradient-text animate-on-scroll fade-in">Đối tác Dịch vụ (Services Partners)</h3>
                     <div class="partner-feedback-grid">
-                        <!-- Thêm các thẻ feedback khác với class 'vibrant-card' và 'pop-in' + delay -->
                          <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Giao thức đa tác tử A2A từ Google Cloud là cầu nối sẽ hợp nhất các tác tử chuyên biệt theo miền trên các nền tảng đa dạng để giải quyết các thách thức phức tạp, cho phép giao tiếp liền mạch và trí tuệ tập thể (collective intelligence) cho các giải pháp tác tử thông minh và hiệu quả hơn."</p>
                             <cite>– Scott Alfieri, AGBG Global lead, <strong>Accenture</strong></cite>
@@ -375,7 +499,7 @@
             </div>
         </section>
 
-        <section id="learn-more" class="content-section call-to-action vibrant-cta"> <!-- Thêm class vibrant-cta -->
+        <section id="learn-more" class="content-section call-to-action vibrant-cta">
             <div class="container section-container text-center">
                 <h2 class="section-title light animate-on-scroll fade-in">Tìm hiểu thêm về A2A</h2>
                  <p class="cta-description light animate-on-scroll fade-in delay-1">Để tìm hiểu thêm về khung A2A, hãy tìm hiểu sâu về <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer"><strong>bản nháp đặc tả đầy đủ</strong></a> và khám phá <a href="https://google.github.io/A2A" target="_blank" rel="noopener noreferrer"><strong>các mẫu mã có sẵn</strong></a> để kiểm tra cấu trúc của giao thức và thử nghiệm mã của nó.</p>
@@ -406,11 +530,10 @@
             </div>
         </section>
 
-        <aside class="related-posts-section alt-bg pattern-bg"> <!-- Thêm pattern-bg -->
+        <aside class="related-posts-section alt-bg pattern-bg">
              <div class="container section-container">
                 <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Bài viết liên quan</h2>
                  <div class="related-posts-grid">
-                     <!-- Sử dụng class 'vibrant-card' và animation 'pop-in' -->
                      <a href="https://developers.googleblog.com/en/apigee-announces-general-availability-of-apim-extension-processor/" target="_blank" rel="noopener noreferrer" class="related-post-card vibrant-card animate-on-scroll pop-in">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Apigee-API-Hub-Feature_1.2e16d0ba.fill-800x400.png" alt="Apigee announces general availability of APIM Extension Processor" class="related-post-image">
                          <div class="related-post-content">
@@ -453,7 +576,7 @@
 
     </main>
 
-    <footer class="site-footer vibrant-footer"> <!-- Thêm class vibrant-footer -->
+    <footer class="site-footer vibrant-footer">
         <div class="container footer-content">
              <div class="footer-column">
                  <a href="https://developers.google.com/" target="_blank" rel="noopener noreferrer" class="footer-logo-google">
