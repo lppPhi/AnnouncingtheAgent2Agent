@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A2A Protocol: Kỷ nguyên mới của Tương tác Tác tử AI</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css"> <!-- Link đến file CSS mới -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
@@ -12,11 +12,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div class="gradient-background"></div>
+    <div class="vibrant-background"></div> <!-- Background mới -->
+    <div class="noise-overlay"></div> <!-- Lớp nhiễu tạo texture -->
 
     <header class="site-header">
         <div class="container header-container">
-            <a href="#" class="logo">A2A<span class="logo-dot">.</span></a>
+            <a href="#" class="logo logo-gradient">A2A<span>.</span></a> <!-- Thêm class logo-gradient -->
             <nav class="main-nav">
                 <ul>
                     <li><a href="#introduction">Giới thiệu</a></li>
@@ -26,7 +27,6 @@
                     <li><a href="#learn-more">Tìm hiểu thêm</a></li>
                 </ul>
             </nav>
-             <!-- Nút Bắt đầu có thể thêm lại nếu cần -->
             <button class="mobile-menu-toggle" aria-label="Mở menu">
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -41,87 +41,92 @@
             <li><a href="#how-it-works">Cách hoạt động</a></li>
             <li><a href="#partners">Đối tác</a></li>
             <li><a href="#learn-more">Tìm hiểu thêm</a></li>
-            <!-- Thêm nút CTA ở mobile nếu muốn -->
-            <!-- <li><a href="#" class="cta-button mobile-cta">Bắt đầu</a></li> -->
         </ul>
     </nav>
 
     <main>
         <section id="hero" class="hero-section">
+             <!-- Có thể thêm các element trang trí ở đây -->
+             <div class="decorative-shape shape-1"></div>
+             <div class="decorative-shape shape-2"></div>
+
             <div class="container hero-content">
                 <div class="hero-text">
-                    <span class="hero-subtitle animate-on-scroll fade-in-up">Giao thức Mở cho Tương lai Cộng tác AI</span>
-                    <h1 class="hero-title animate-on-scroll fade-in-up delay-1">Công bố Giao thức Agent2Agent (A2A)</h1>
-                     <div class="post-meta animate-on-scroll fade-in-up delay-2">
-                        <span class="post-date"><i class="far fa-calendar-alt"></i> NGÀY 9 THÁNG 4 NĂM 2025</span>
-                        <div class="post-authors">
-                            <i class="fas fa-users"></i> Tác giả:
+                    <span class="hero-subtitle vibrant-badge animate-on-scroll scale-in">Giao thức Mở cho Tương lai Cộng tác AI</span>
+                    <h1 class="hero-title hero-gradient-text animate-on-scroll fade-in-up delay-1">Công bố Giao thức Agent2Agent (A2A)</h1>
+                    <div class="post-meta animate-on-scroll fade-in-up delay-2">
+                         <span class="post-date"><i class="far fa-calendar-alt"></i> NGÀY 9 THÁNG 4 NĂM 2025</span>
+                         <div class="post-authors">
+                             <i class="fas fa-users"></i> Tác giả:
                             <span>[Rao Surapaneni](link_placeholder) VP & GM Business Application Platform</span>,
                             <span>[Miku Jha](link_placeholder) Director, AI/ML Partner Engineering Google Cloud</span>,
                             <span>[Michael Vakoc](link_placeholder) Product Manager Google Cloud</span>,
                             <span>[Todd Segal](link_placeholder) Principal Engineer Business Application Platform</span>
-                            <!-- Lưu ý: Thay link_placeholder bằng link thật nếu có -->
-                        </div>
+                         </div>
                     </div>
                     <p class="hero-description animate-on-scroll fade-in-up delay-3">Mở khóa tiềm năng của các tác tử AI (AI agents) làm việc cùng nhau một cách liền mạch, an toàn và hiệu quả trên mọi nền tảng.</p>
                     <div class="hero-buttons animate-on-scroll fade-in-up delay-4">
-                        <a href="#learn-more" class="cta-button primary">Tìm hiểu Đặc tả</a>
-                        <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="cta-button secondary">Xem trên GitHub <i class="fab fa-github"></i></a>
+                        <a href="#learn-more" class="cta-button glowing-button primary">Tìm hiểu Đặc tả</a>
+                        <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="cta-button glowing-button secondary">Xem trên GitHub <i class="fab fa-github"></i></a>
                     </div>
                 </div>
-                <div class="hero-image-container animate-on-scroll fade-in-up delay-3">
+                <div class="hero-image-container animate-on-scroll scale-in delay-2">
                      <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image2.original_6xqVyTd.jpg" alt="Minh họa giao thức A2A" class="hero-image">
                 </div>
             </div>
         </section>
 
+        <!-- Các section còn lại giữ nguyên cấu trúc HTML như phiên bản trước -->
+        <!-- Chỉ cần CSS mới sẽ áp dụng style khác -->
+
         <section id="introduction" class="content-section alt-bg">
             <div class="container section-container">
-                <h2 class="section-title animate-on-scroll fade-in">Một Kỷ nguyên Mới của Khả năng tương tác Tác tử (Agent Interoperability)</h2>
-                <div class="two-columns">
-                    <div class="column animate-on-scroll fade-in-left">
-                        <p>Các tác tử AI (AI agents) mang đến cơ hội độc đáo để giúp mọi người làm việc năng suất hơn bằng cách tự động xử lý nhiều tác vụ phức tạp hoặc lặp đi lặp lại hàng ngày. Ngày nay, các doanh nghiệp ngày càng xây dựng và triển khai các tác tử tự trị (autonomous agents) để giúp mở rộng quy mô, tự động hóa và nâng cao các quy trình trong toàn bộ nơi làm việc – từ đặt mua máy tính xách tay mới, đến hỗ trợ đại diện dịch vụ khách hàng (customer service representatives), đến hỗ trợ lập kế hoạch chuỗi cung ứng (supply chain planning).</p>
-                        <p>Để tối đa hóa lợi ích từ AI dạng tác tử (agentic AI), điều quan trọng là các tác tử này phải có khả năng cộng tác trong một hệ sinh thái đa tác tử (multi-agent ecosystem) năng động, xuyên qua các hệ thống dữ liệu và ứng dụng riêng lẻ (siloed data systems and applications). Việc cho phép các tác tử tương tác với nhau, ngay cả khi chúng được xây dựng bởi các nhà cung cấp (vendors) khác nhau hoặc trong một khung (framework) khác nhau, sẽ tăng cường quyền tự chủ (autonomy) và nhân lên lợi ích về năng suất, đồng thời giảm chi phí dài hạn.</p>
+                <h2 class="section-title gradient-text animate-on-scroll fade-in">Một Kỷ nguyên Mới của Khả năng tương tác Tác tử (Agent Interoperability)</h2>
+                 <div class="two-columns">
+                     <div class="column animate-on-scroll fade-in-left">
+                         <p>Các tác tử AI (AI agents) mang đến cơ hội độc đáo để giúp mọi người làm việc năng suất hơn bằng cách tự động xử lý nhiều tác vụ phức tạp hoặc lặp đi lặp lại hàng ngày. Ngày nay, các doanh nghiệp ngày càng xây dựng và triển khai các tác tử tự trị (autonomous agents) để giúp mở rộng quy mô, tự động hóa và nâng cao các quy trình trong toàn bộ nơi làm việc – từ đặt mua máy tính xách tay mới, đến hỗ trợ đại diện dịch vụ khách hàng (customer service representatives), đến hỗ trợ lập kế hoạch chuỗi cung ứng (supply chain planning).</p>
+                         <p>Để tối đa hóa lợi ích từ AI dạng tác tử (agentic AI), điều quan trọng là các tác tử này phải có khả năng cộng tác trong một hệ sinh thái đa tác tử (multi-agent ecosystem) năng động, xuyên qua các hệ thống dữ liệu và ứng dụng riêng lẻ (siloed data systems and applications). Việc cho phép các tác tử tương tác với nhau, ngay cả khi chúng được xây dựng bởi các nhà cung cấp (vendors) khác nhau hoặc trong một khung (framework) khác nhau, sẽ tăng cường quyền tự chủ (autonomy) và nhân lên lợi ích về năng suất, đồng thời giảm chi phí dài hạn.</p>
                      </div>
                      <div class="column animate-on-scroll fade-in-right">
-                        <p><strong>Hôm nay, chúng tôi ra mắt một giao thức (protocol) mở, mới có tên là Agent2Agent (A2A), với sự hỗ trợ và đóng góp từ hơn 50 đối tác công nghệ</strong> như Atlassian, Box, Cohere, Intuit, Langchain, MongoDB, PayPal, Salesforce, SAP, ServiceNow, UKG và Workday; cùng các nhà cung cấp dịch vụ hàng đầu bao gồm Accenture, BCG, Capgemini, Cognizant, Deloitte, HCLTech, Infosys, KPMG, McKinsey, PwC, TCS và Wipro. Giao thức A2A sẽ cho phép các tác tử AI giao tiếp với nhau, trao đổi thông tin một cách an toàn và phối hợp các hành động trên nhiều nền tảng (platforms) hoặc ứng dụng doanh nghiệp khác nhau. Chúng tôi tin rằng khung A2A sẽ mang lại giá trị đáng kể cho khách hàng, những người mà các tác tử AI của họ giờ đây sẽ có thể hoạt động trên toàn bộ hệ thống ứng dụng doanh nghiệp (enterprise application estates) của họ.</p>
-                        <p>Nỗ lực hợp tác này biểu thị một tầm nhìn chung về một tương lai khi các tác tử AI, bất kể công nghệ nền tảng của chúng là gì, có thể cộng tác liền mạch để tự động hóa các quy trình công việc (workflows) phức tạp của doanh nghiệp và thúc đẩy mức độ hiệu quả và đổi mới chưa từng có.</p>
-                        <p>A2A là một giao thức mở bổ sung cho Giao thức Ngữ cảnh Mô hình (Model Context Protocol - MCP) của Anthropic, cung cấp các công cụ và ngữ cảnh hữu ích cho các tác tử. Dựa trên chuyên môn nội bộ của Google trong việc mở rộng quy mô các hệ thống tác tử (agentic systems), chúng tôi đã thiết kế giao thức A2A để giải quyết những thách thức mà chúng tôi đã xác định trong việc triển khai các hệ thống đa tác tử (multi-agent systems) quy mô lớn cho khách hàng của mình. A2A trao quyền cho các nhà phát triển (developers) xây dựng các tác tử có khả năng kết nối với bất kỳ tác tử nào khác được xây dựng bằng giao thức này và cung cấp cho người dùng sự linh hoạt để kết hợp các tác tử từ nhiều nhà cung cấp khác nhau. Quan trọng là, các doanh nghiệp được hưởng lợi từ một phương pháp được tiêu chuẩn hóa để quản lý các tác tử của họ trên các nền tảng và môi trường đám mây (cloud environments) đa dạng. Chúng tôi tin rằng khả năng tương tác phổ quát (universal interoperability) này là điều cần thiết để hiện thực hóa hoàn toàn tiềm năng của các tác tử AI cộng tác.</p>
-                     </div>
+                         <p><strong>Hôm nay, chúng tôi ra mắt một giao thức (protocol) mở, mới có tên là Agent2Agent (A2A), với sự hỗ trợ và đóng góp từ hơn 50 đối tác công nghệ</strong> như Atlassian, Box, Cohere, Intuit, Langchain, MongoDB, PayPal, Salesforce, SAP, ServiceNow, UKG và Workday; cùng các nhà cung cấp dịch vụ hàng đầu bao gồm Accenture, BCG, Capgemini, Cognizant, Deloitte, HCLTech, Infosys, KPMG, McKinsey, PwC, TCS và Wipro. Giao thức A2A sẽ cho phép các tác tử AI giao tiếp với nhau, trao đổi thông tin một cách an toàn và phối hợp các hành động trên nhiều nền tảng (platforms) hoặc ứng dụng doanh nghiệp khác nhau. Chúng tôi tin rằng khung A2A sẽ mang lại giá trị đáng kể cho khách hàng, những người mà các tác tử AI của họ giờ đây sẽ có thể hoạt động trên toàn bộ hệ thống ứng dụng doanh nghiệp (enterprise application estates) của họ.</p>
+                         <p>Nỗ lực hợp tác này biểu thị một tầm nhìn chung về một tương lai khi các tác tử AI, bất kể công nghệ nền tảng của chúng là gì, có thể cộng tác liền mạch để tự động hóa các quy trình công việc (workflows) phức tạp của doanh nghiệp và thúc đẩy mức độ hiệu quả và đổi mới chưa từng có.</p>
+                         <p>A2A là một giao thức mở bổ sung cho Giao thức Ngữ cảnh Mô hình (Model Context Protocol - MCP) của Anthropic, cung cấp các công cụ và ngữ cảnh hữu ích cho các tác tử. Dựa trên chuyên môn nội bộ của Google trong việc mở rộng quy mô các hệ thống tác tử (agentic systems), chúng tôi đã thiết kế giao thức A2A để giải quyết những thách thức mà chúng tôi đã xác định trong việc triển khai các hệ thống đa tác tử (multi-agent systems) quy mô lớn cho khách hàng của mình. A2A trao quyền cho các nhà phát triển (developers) xây dựng các tác tử có khả năng kết nối với bất kỳ tác tử nào khác được xây dựng bằng giao thức này và cung cấp cho người dùng sự linh hoạt để kết hợp các tác tử từ nhiều nhà cung cấp khác nhau. Quan trọng là, các doanh nghiệp được hưởng lợi từ một phương pháp được tiêu chuẩn hóa để quản lý các tác tử của họ trên các nền tảng và môi trường đám mây (cloud environments) đa dạng. Chúng tôi tin rằng khả năng tương tác phổ quát (universal interoperability) này là điều cần thiết để hiện thực hóa hoàn toàn tiềm năng của các tác tử AI cộng tác.</p>
+                    </div>
                  </div>
                  <div class="partner-logos-intro animate-on-scroll fade-in">
-                     <h3 class="subsection-title text-center">Được hỗ trợ bởi các nhà lãnh đạo ngành</h3>
-                     <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image1_yEPzdSr.original.png" alt="Logo các đối tác A2A" class="partner-logos-image">
-                 </div>
+                     <h3 class="subsection-title text-center gradient-text">Được hỗ trợ bởi các nhà lãnh đạo ngành</h3>
+                    <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image1_yEPzdSr.original.png" alt="Logo các đối tác A2A" class="partner-logos-image">
+                </div>
             </div>
         </section>
 
-        <section id="principles" class="content-section">
+        <section id="principles" class="content-section pattern-bg"> <!-- Thêm pattern-bg -->
             <div class="container section-container">
-                <h2 class="section-title text-center animate-on-scroll fade-in">Nguyên tắc Thiết kế Cốt lõi của A2A</h2>
+                <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Nguyên tắc Thiết kế Cốt lõi của A2A</h2>
                 <p class="section-description text-center animate-on-scroll fade-in">A2A là một giao thức mở cung cấp một cách tiêu chuẩn để các tác tử cộng tác với nhau, bất kể khung hoặc nhà cung cấp cơ bản nào. Trong quá trình thiết kế giao thức với các đối tác của mình, chúng tôi đã tuân thủ năm nguyên tắc chính:</p>
                 <div class="principles-grid">
-                    <div class="principle-card animate-on-scroll fade-in-up">
+                    <!-- Thêm class 'vibrant-card' -->
+                    <div class="principle-card vibrant-card animate-on-scroll pop-in">
                         <div class="principle-icon"><i class="fas fa-brain"></i></div>
                         <h3>Nắm bắt Khả năng Tác tử (Embrace agentic capabilities)</h3>
                         <p>A2A tập trung vào việc cho phép các tác tử cộng tác theo phương thức (modalities) tự nhiên, phi cấu trúc của chúng, ngay cả khi chúng không chia sẻ bộ nhớ (memory), công cụ (tools) và ngữ cảnh (context). Chúng tôi đang kích hoạt các kịch bản đa tác tử thực sự mà không giới hạn một tác tử thành một "công cụ".</p>
                     </div>
-                    <div class="principle-card animate-on-scroll fade-in-up delay-1">
+                    <div class="principle-card vibrant-card animate-on-scroll pop-in delay-1">
                         <div class="principle-icon"><i class="fas fa-layer-group"></i></div>
                         <h3>Xây dựng trên Tiêu chuẩn Hiện có (Build on existing standards)</h3>
                         <p>Giao thức được xây dựng dựa trên các tiêu chuẩn phổ biến hiện có bao gồm HTTP, SSE, JSON-RPC, điều đó có nghĩa là dễ dàng tích hợp hơn với các ngăn xếp CNTT (IT stacks) hiện có mà doanh nghiệp đã sử dụng hàng ngày.</p>
                     </div>
-                    <div class="principle-card animate-on-scroll fade-in-up delay-2">
+                    <div class="principle-card vibrant-card animate-on-scroll pop-in delay-2">
                         <div class="principle-icon"><i class="fas fa-shield-alt"></i></div>
                         <h3>An toàn Mặc định (Secure by default)</h3>
                         <p>A2A được thiết kế để hỗ trợ xác thực (authentication) và ủy quyền (authorization) cấp doanh nghiệp, với sự tương đương với các lược đồ xác thực của OpenAPI tại thời điểm ra mắt.</p>
                     </div>
-                    <div class="principle-card animate-on-scroll fade-in-up delay-3">
+                    <div class="principle-card vibrant-card animate-on-scroll pop-in delay-3">
                         <div class="principle-icon"><i class="fas fa-clock"></i></div>
                         <h3>Hỗ trợ Tác vụ Dài hạn (Support for long-running tasks)</h3>
                         <p>Chúng tôi đã thiết kế A2A để linh hoạt và hỗ trợ các kịch bản nơi nó vượt trội trong việc hoàn thành mọi thứ từ các tác vụ nhanh đến nghiên cứu sâu có thể mất hàng giờ hoặc thậm chí hàng ngày khi có sự tham gia của con người (humans are in the loop). Trong suốt quá trình này, A2A có thể cung cấp phản hồi (feedback), thông báo (notifications), và cập nhật trạng thái (state updates) theo thời gian thực cho người dùng của nó.</p>
                     </div>
-                    <div class="principle-card animate-on-scroll fade-in-up delay-4">
+                    <div class="principle-card vibrant-card animate-on-scroll pop-in delay-4">
                          <div class="principle-icon"><i class="fas fa-photo-video"></i></div>
                          <h3>Độc lập về Phương thức (Modality agnostic)</h3>
                          <p>Thế giới tác tử không chỉ giới hạn ở văn bản, đó là lý do tại sao chúng tôi đã thiết kế A2A để hỗ trợ các phương thức khác nhau, bao gồm cả truyền phát âm thanh và video (audio and video streaming).</p>
@@ -132,7 +137,7 @@
 
         <section id="how-it-works" class="content-section alt-bg">
              <div class="container section-container">
-                 <h2 class="section-title animate-on-scroll fade-in">Cách A2A Hoạt động</h2>
+                 <h2 class="section-title gradient-text animate-on-scroll fade-in">Cách A2A Hoạt động</h2>
                  <div class="how-it-works-layout">
                     <div class="how-it-works-image animate-on-scroll fade-in-left">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/image5_VkAG0Kd.original.png" alt="Sơ đồ luồng hoạt động của A2A">
@@ -140,13 +145,13 @@
                      </div>
                      <div class="how-it-works-text animate-on-scroll fade-in-right">
                          <p>A2A tạo điều kiện giao tiếp giữa tác tử "khách hàng" (client agent) và tác tử "từ xa" (remote agent). Tác tử khách hàng chịu trách nhiệm xây dựng và truyền đạt các tác vụ (tasks), trong khi tác tử từ xa chịu trách nhiệm hành động theo các tác vụ đó nhằm cố gắng cung cấp thông tin chính xác hoặc thực hiện hành động chính xác. Sự tương tác này bao gồm một số khả năng chính:</p>
-                         <ul>
+                         <ul class="stylish-list"> <!-- Thêm class stylish-list -->
                             <li><i class="fas fa-search-location list-icon"></i><strong>Khám phá khả năng (Capability discovery):</strong> Các tác tử có thể quảng cáo khả năng của mình bằng cách sử dụng "Thẻ Tác tử" (Agent Card) ở định dạng JSON, cho phép tác tử khách hàng xác định tác tử tốt nhất có thể thực hiện một tác vụ và tận dụng A2A để giao tiếp với tác tử từ xa.</li>
                             <li><i class="fas fa-tasks list-icon"></i><strong>Quản lý tác vụ (Task management):</strong> Việc giao tiếp giữa tác tử khách hàng và tác tử từ xa được định hướng theo hướng hoàn thành tác vụ, trong đó các tác tử làm việc để đáp ứng yêu cầu của người dùng cuối (end-user requests). "Tác vụ" (task) này được xác định bởi giao thức và có một vòng đời (lifecycle). Nó có thể được hoàn thành ngay lập tức hoặc, đối với các tác vụ chạy dài (long-running tasks), mỗi tác tử có thể giao tiếp để giữ đồng bộ (sync) với nhau về trạng thái mới nhất của việc hoàn thành tác vụ. Đầu ra của một tác vụ được gọi là "hiện vật" (artifact).</li>
                             <li><i class="fas fa-comments list-icon"></i><strong>Cộng tác (Collaboration):</strong> Các tác tử có thể gửi tin nhắn (messages) cho nhau để truyền đạt ngữ cảnh (context), phản hồi (replies), hiện vật (artifacts), hoặc hướng dẫn người dùng (user instructions).</li>
                             <li><i class="fas fa-handshake list-icon"></i><strong>Đàm phán trải nghiệm người dùng (User experience negotiation):</strong> Mỗi tin nhắn bao gồm các "phần" (parts), là một phần nội dung hoàn chỉnh, như một hình ảnh được tạo ra. Mỗi phần có một loại nội dung (content type) được chỉ định, cho phép tác tử khách hàng và tác tử từ xa đàm phán định dạng chính xác cần thiết và bao gồm rõ ràng các cuộc đàm phán về khả năng giao diện người dùng (UI capabilities) của người dùng – ví dụ: iframes, video, biểu mẫu web (web forms), và nhiều hơn nữa.</li>
                          </ul>
-                        <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="link-arrow">Xem chi tiết đầy đủ trong bản nháp đặc tả (draft specification) <i class="fas fa-arrow-right"></i></a>
+                        <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="link-arrow vibrant-link">Xem chi tiết đầy đủ trong bản nháp đặc tả (draft specification) <i class="fas fa-arrow-right"></i></a>
                     </div>
                  </div>
              </div>
@@ -154,13 +159,13 @@
 
         <section id="use-case" class="content-section">
              <div class="container section-container">
-                <h2 class="section-title text-center animate-on-scroll fade-in">Ví dụ Thực tế: Tìm nguồn Ứng viên (Candidate Sourcing)</h2>
+                <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Ví dụ Thực tế: Tìm nguồn Ứng viên (Candidate Sourcing)</h2>
                 <div class="use-case-content">
                      <div class="use-case-text animate-on-scroll fade-in-left">
                          <p>Việc tuyển dụng một kỹ sư phần mềm (software engineer) có thể được đơn giản hóa đáng kể với sự cộng tác của A2A. Trong một giao diện thống nhất như Agentspace, người dùng (ví dụ: người quản lý tuyển dụng - hiring manager) có thể giao nhiệm vụ cho tác tử của họ tìm kiếm các ứng viên phù hợp với mô tả công việc (job listing), địa điểm (location), và bộ kỹ năng (skill set).</p>
                          <p>Tác tử sau đó tương tác với các tác tử chuyên biệt khác để tìm nguồn ứng viên tiềm năng. Người dùng nhận được những đề xuất này và sau đó có thể chỉ đạo tác tử của họ lên lịch phỏng vấn thêm, hợp lý hóa quy trình tìm nguồn ứng viên. Sau khi quá trình phỏng vấn hoàn tất, một tác tử khác có thể được tham gia để hỗ trợ kiểm tra lý lịch (background checks). Đây chỉ là một ví dụ về cách các tác tử AI cần cộng tác giữa các hệ thống để tìm nguồn ứng viên đủ điều kiện cho công việc.</p>
                      </div>
-                     <div class="video-placeholder animate-on-scroll fade-in-right">
+                     <div class="video-placeholder stylish-placeholder animate-on-scroll scale-in-right delay-1"> <!-- Thêm class stylish-placeholder -->
                         <i class="fas fa-play-circle video-icon"></i>
                          <p>Rất tiếc, trình duyệt của bạn không hỗ trợ phát lại video này</p>
                          <span>(Nhấp chuột phải để xem trong tab mới - Nội dung video gốc không có sẵn)</span>
@@ -169,198 +174,199 @@
              </div>
         </section>
 
-         <section id="future" class="content-section alt-bg">
+        <section id="future" class="content-section alt-bg pattern-bg"> <!-- Thêm pattern-bg -->
              <div class="container section-container text-center">
-                 <h2 class="section-title animate-on-scroll fade-in">Tương lai của Khả năng tương tác Tác tử</h2>
-                 <p class="section-description animate-on-scroll fade-in">A2A có tiềm năng mở ra một kỷ nguyên mới về khả năng tương tác của tác tử, thúc đẩy sự đổi mới và tạo ra các hệ thống tác tử (agentic systems) mạnh mẽ và linh hoạt hơn. Chúng tôi tin rằng giao thức này sẽ mở đường cho một tương lai nơi các tác tử có thể cộng tác liền mạch để giải quyết các vấn đề phức tạp và nâng cao cuộc sống của chúng ta.</p>
-                 <p class="section-description animate-on-scroll fade-in">Chúng tôi cam kết xây dựng giao thức với sự hợp tác của các đối tác và cộng đồng một cách cởi mở. Chúng tôi đang phát hành giao thức dưới dạng mã nguồn mở (open source) và thiết lập các lộ trình rõ ràng để đóng góp.</p>
-                <p class="section-description animate-on-scroll fade-in">Chúng tôi đang làm việc với các đối tác để ra mắt phiên bản sẵn sàng sản xuất (production-ready version) của giao thức vào cuối năm nay.</p>
+                 <h2 class="section-title gradient-text animate-on-scroll fade-in">Tương lai của Khả năng tương tác Tác tử</h2>
+                 <p class="section-description animate-on-scroll fade-in delay-1">A2A có tiềm năng mở ra một kỷ nguyên mới về khả năng tương tác của tác tử, thúc đẩy sự đổi mới và tạo ra các hệ thống tác tử (agentic systems) mạnh mẽ và linh hoạt hơn. Chúng tôi tin rằng giao thức này sẽ mở đường cho một tương lai nơi các tác tử có thể cộng tác liền mạch để giải quyết các vấn đề phức tạp và nâng cao cuộc sống của chúng ta.</p>
+                 <p class="section-description animate-on-scroll fade-in delay-2">Chúng tôi cam kết xây dựng giao thức với sự hợp tác của các đối tác và cộng đồng một cách cởi mở. Chúng tôi đang phát hành giao thức dưới dạng mã nguồn mở (open source) và thiết lập các lộ trình rõ ràng để đóng góp.</p>
+                <p class="section-description animate-on-scroll fade-in delay-3">Chúng tôi đang làm việc với các đối tác để ra mắt phiên bản sẵn sàng sản xuất (production-ready version) của giao thức vào cuối năm nay.</p>
             </div>
         </section>
 
         <section id="partners" class="content-section">
             <div class="container section-container">
-                <h2 class="section-title text-center animate-on-scroll fade-in">Phản hồi từ Hệ sinh thái Đối tác A2A</h2>
-                <p class="section-description text-center animate-on-scroll fade-in">Chúng tôi rất vui mừng khi có một hệ sinh thái (ecosystem) đối tác đa dạng và ngày càng phát triển đang tích cực đóng góp vào việc định nghĩa giao thức A2A và đặc tả kỹ thuật của nó. Những hiểu biết và chuyên môn của họ là vô giá trong việc định hình tương lai của khả năng tương tác AI.</p>
+                <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Phản hồi từ Hệ sinh thái Đối tác A2A</h2>
+                <p class="section-description text-center animate-on-scroll fade-in delay-1">Chúng tôi rất vui mừng khi có một hệ sinh thái (ecosystem) đối tác đa dạng và ngày càng phát triển đang tích cực đóng góp vào việc định nghĩa giao thức A2A và đặc tả kỹ thuật của nó. Những hiểu biết và chuyên môn của họ là vô giá trong việc định hình tương lai của khả năng tương tác AI.</p>
 
                 <div class="partner-feedback-container">
-                    <h3 class="subsection-title animate-on-scroll fade-in">Đối tác Công nghệ & Nền tảng (Technology & Platform Partners)</h3>
+                    <h3 class="subsection-title gradient-text animate-on-scroll fade-in">Đối tác Công nghệ & Nền tảng (Technology & Platform Partners)</h3>
                     <div class="partner-feedback-grid">
-                        <!-- Thêm tất cả các trích dẫn từ Technology & Platform Partners vào đây -->
-                        <div class="feedback-card animate-on-scroll fade-in-up">
+                        <!-- Sử dụng class 'vibrant-card' và animation 'pop-in' -->
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Ask-AI rất vui mừng được hợp tác với Google về giao thức A2A, định hình tương lai của khả năng tương tác AI và sự cộng tác liền mạch của tác tử, thúc đẩy vị trí dẫn đầu của mình trong lĩnh vực AI doanh nghiệp cho Trải nghiệm khách hàng (Customer Experience)."</p>
                             <cite>– CEO Alon Talmor PhD, <strong>ask-ai.com</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                             <p class="quote">"Với sự đầu tư của Atlassian vào các tác tử Rovo, việc phát triển một giao thức được tiêu chuẩn hóa như A2A sẽ giúp các tác tử khám phá, phối hợp và suy luận thành công với nhau để cho phép các hình thức ủy quyền (delegation) và cộng tác phong phú hơn ở quy mô lớn."</p>
                             <cite>– Brendan Haire VP, Engineering of AI Platform, <strong>Atlassian</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                             <p class="quote">"Tại Articul8, chúng tôi tin rằng AI phải cộng tác và tương tác để thực sự mở rộng quy mô trên toàn doanh nghiệp. Chúng tôi rất vui mừng được hỗ trợ phát triển giao thức tương tác A2A – một sáng kiến hoàn toàn phù hợp với sứ mệnh của chúng tôi là cung cấp các khả năng GenAI theo miền cụ thể hoạt động liền mạch trên các hệ thống và quy trình công việc phức tạp. Chúng tôi đang cho phép ModelMesh của Articul8 (một 'Tác tử của các Tác tử') coi A2A như một công dân hạng nhất (first-class citizen), cho phép giao tiếp an toàn, liền mạch giữa các tác tử thông minh."</p>
                             <cite>– Arun Subramaniyan, Founder & CEO of <strong>Articul8</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"Arize AI tự hào hợp tác với Google với tư cách là đối tác ra mắt cho giao thức tương tác A2A, thúc đẩy tương tác liền mạch, an toàn giữa các tác tử AI như một phần trong cam kết của Arize đối với các khung đánh giá (evaluation) và khả năng quan sát (observability) mã nguồn mở."</p>
                             <cite>– Jason Lopatecki, Cofounder & CEO, <strong>Arize AI</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <!-- ...Thêm các thẻ feedback khác với class 'vibrant-card' và 'pop-in' + delay -->
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                              <p class="quote">"BCG giúp thiết kế lại các tổ chức với trí thông minh làm cốt lõi. Các khả năng mở và có thể tương tác như A2A có thể đẩy nhanh quá trình này, cho phép tạo ra lợi thế cạnh tranh bền vững, tự trị (autonomous competitive advantage)."</p>
                              <cite>– Djon Kleine, Managing Director & Partner at <strong>BCG</strong></cite>
                          </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                             <p class="quote">"Chúng tôi mong muốn mở rộng quan hệ đối tác với Google để cho phép các tác tử Box hoạt động với hệ sinh thái tác tử của Google Cloud bằng A2A, cùng nhau đổi mới để định hình tương lai của các tác tử AI đồng thời trao quyền cho các tổ chức tự động hóa quy trình công việc tốt hơn, giảm chi phí và tạo ra các kết quả AI đáng tin cậy (trustworthy AI outputs)."</p>
                             <cite>– Ketan Kittur, VP Product Management, Platform and Integrations at <strong>Box</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up">
-                            <p class="quote">"Tại C3 AI, chúng tôi tin rằng các hệ thống mở, có thể tương tác là chì khóa để làm cho AI Doanh nghiệp (Enterprise AI) hoạt động và mang lại giá trị trong thế giới thực – và A2A có tiềm năng giúp khách hàng phá bỏ các rào cản (silos) và cho phép các tác tử AI hoạt động cùng nhau một cách an toàn trên các hệ thống, nhóm và ứng dụng."</p>
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in">
+                            <p class="quote">"Tại C3 AI, chúng tôi tin rằng các hệ thống mở, có thể tương tác là chìa khóa để làm cho AI Doanh nghiệp (Enterprise AI) hoạt động và mang lại giá trị trong thế giới thực – và A2A có tiềm năng giúp khách hàng phá bỏ các rào cản (silos) và cho phép các tác tử AI hoạt động cùng nhau một cách an toàn trên các hệ thống, nhóm và ứng dụng."</p>
                             <cite>– Nikhil Krishnan - C3 AI SVP and Chief Technology Officer, Data Science, <strong>C3 AI</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                              <p class="quote">"A2A sẽ cho phép chuyên môn hóa và điều phối tác tử đáng tin cậy và an toàn để mở ra một kỷ nguyên mới của điều phối tính toán (compute orchestration), trao quyền cho các công ty cung cấp sản phẩm và dịch vụ nhanh hơn, đáng tin cậy hơn và cho phép họ tập trung lại nỗ lực kỹ thuật của mình vào việc thúc đẩy đổi mới và giá trị."</p>
                              <cite>– Rob Skillington, Founder /CTO, <strong>Chronosphere</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                             <p class="quote">"Là người tiên phong trong các hệ thống đa tác tử doanh nghiệp, Cognizant cam kết và tích cực theo đuổi khả năng tương tác của tác tử như một yêu cầu quan trọng đối với khách hàng của chúng tôi."</p>
                              <cite>– Babak Hodjat, CTO - AI, <strong>Cognizant</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"Tại Cohere, chúng tôi đang xây dựng cơ sở hạ tầng (infrastructure) AI an toàn mà các doanh nghiệp cần để tự tin áp dụng các tác tử tự trị, và giao thức A2A mở đảm bảo sự cộng tác liền mạch, đáng tin cậy — ngay cả trong môi trường air-gapped — để các doanh nghiệp có thể đổi mới ở quy mô lớn mà không ảnh hưởng đến quyền kiểm soát (control) hoặc tuân thủ (compliance)."</p>
                             <cite>– Autumn Moulder, VP of Engineering at <strong>Cohere</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                             <p class="quote">"A2A cho phép các tác tử thông minh thiết lập trao đổi dữ liệu trực tiếp, thời gian thực, đơn giản hóa các đường ống dữ liệu (data pipelines) phức tạp để thay đổi cơ bản cách các tác tử giao tiếp và tạo điều kiện đưa ra quyết định."</p>
                             <cite>– Pascal Vantrepote, Senior Director of Innovation, <strong>Confluent</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                              <p class="quote">"A2A mở ra cánh cửa cho một kỷ nguyên mới của giao tiếp và cộng tác thông minh, thời gian thực, mà Cotality sẽ mang đến cho khách hàng trong lĩnh vực cho vay mua nhà (home lending), bảo hiểm (insurance), bất động sản (real estate), và chính phủ (government) — giúp họ cải thiện năng suất, tăng tốc độ ra quyết định."</p>
                              <cite>– Sachin Rajpal, Managing Director, Data Solutions, <strong>Cotality (formerly CoreLogic)</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"DataStax rất vui mừng được trở thành một phần của A2A và khám phá cách nó có thể hỗ trợ Langflow, đại diện cho một bước quan trọng hướng tới các hệ thống AI thực sự có thể tương tác có thể cộng tác trong các tác vụ phức tạp trải rộng trên nhiều môi trường."</p>
                              <cite>– Ed Anuff, Chief Product Officer, <strong>DataStax</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                              <p class="quote">"Chúng tôi rất vui mừng khi thấy Google Cloud giới thiệu giao thức A2A để hợp lý hóa việc phát triển các hệ thống tác tử phức tạp, điều này sẽ giúp Datadog cho phép người dùng của mình xây dựng các ứng dụng AI tác tử (agentic AI applications) sáng tạo hơn, được tối ưu hóa và an toàn hơn."</p>
                              <cite>– Yrieix Garnier, VP of Product at <strong>Datadog</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                              <p class="quote">"Hỗ trợ tầm nhìn về hệ sinh thái tác tử mở, có thể tương tác, Elastic mong muốn hợp tác với Google Cloud và các nhà lãnh đạo ngành khác về A2A và cung cấp kinh nghiệm quản lý dữ liệu và điều phối quy trình làm việc (workflow orchestration) của mình để tăng cường giao thức."</p>
                              <cite>– Steve Kearns, GVP and GM of Search, <strong>Elastic</strong></cite>
                          </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                              <p class="quote">"A2A có tiềm năng đẩy nhanh tầm nhìn của GrowthLoop về Tiếp thị Hợp chất (Compound Marketing) cho khách hàng của chúng tôi — cho phép các tác tử AI của chúng tôi cộng tác liền mạch với các tác tử chuyên biệt khác, học hỏi nhanh hơn từ dữ liệu doanh nghiệp, và nhanh chóng tối ưu hóa các chiến dịch trên toàn hệ sinh thái tiếp thị, tất cả trong khi tôn trọng quyền riêng tư dữ liệu (data privacy) trên cơ sở hạ tầng đám mây (cloud infrastructure) của khách hàng."</p>
                              <cite>– Anthony Rotio, Chief Data Strategy Officer, <strong>GrowthLoop</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                             <p class="quote">"Harness rất vui mừng được hỗ trợ A2A và cam kết đơn giản hóa trải nghiệm của nhà phát triển bằng cách tích hợp trí thông minh do AI điều khiển vào mọi giai đoạn của vòng đời phần mềm (software lifecycle), trao quyền cho các nhóm để có được thông tin chi tiết sâu hơn từ dữ liệu thời gian chạy (runtime data), tự động hóa các quy trình công việc phức tạp, và nâng cao hiệu suất hệ thống."</p>
                              <cite>– Gurashish Brar, Head of Engineering at <strong>Harness.</strong></cite>
                          </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                              <p class="quote">"Incorta rất vui mừng được hỗ trợ A2A và thúc đẩy giao tiếp tác tử cho khách hàng, làm cho tương lai của tự động hóa doanh nghiệp thông minh hơn, nhanh hơn, và thực sự dựa trên dữ liệu (data-driven)."</p>
                              <cite>– Osama Elkady CEO <strong>Incorta</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Intuit tin tưởng mạnh mẽ rằng một giao thức mã nguồn mở như A2A sẽ cho phép các quy trình công việc phức tạp của tác tử, đẩy nhanh quá trình tích hợp đối tác (partner integrations) của chúng tôi, và thúc đẩy ngành công nghiệp phát triển với các tác tử đa nền tảng (cross-platform agents) cộng tác hiệu quả."</p>
                             <cite>– Tapasvi Moturu, Vice President, Software Engineering for Agentic Frameworks, at <strong>Intuit</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                             <p class="quote">"Chúng tôi rất vui mừng được trở thành đối tác ra mắt cho A2A, một sáng kiến giúp tăng cường sự hợp tác của tác tử và đưa chúng ta đến gần hơn với một thế giới đa tác tử thực sự, trao quyền cho các nhà phát triển trên các IDE JetBrains, công cụ nhóm (team tools), và Google Cloud."</p>
                             <cite>– Vladislav Tankov, Director of AI, <strong>JetBrains</strong></cite>
                          </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                             <p class="quote">"JFrog rất vui mừng được tham gia giao thức A2A, một sáng kiến mà chúng tôi tin rằng sẽ giúp vượt qua nhiều thách thức tích hợp (integration challenges) ngày nay và là động lực chính cho thế hệ ứng dụng tác tử tiếp theo."</p>
                             <cite>– Yoav Landman, CTO and Co-founder, <strong>JFrog</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"A2A là một bước quan trọng để hiện thực hóa toàn bộ tiềm năng của các tác tử AI, hỗ trợ một tương lai nơi AI có thể thực sự tăng cường khả năng của con người, tự động hóa các quy trình công việc phức tạp và thúc đẩy sự đổi mới."</p>
                             <cite>– Manu Sharma Founder & CEO, <strong>LabelBox</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                             <p class="quote">"LangChain tin rằng các tác tử tương tác với các tác tử khác là tương lai rất gần, và chúng tôi rất vui mừng được hợp tác với Google Cloud để đưa ra một giao thức chung đáp ứng nhu cầu của những người xây dựng và người dùng tác tử."</p>
                              <cite>– Harrison Chase Co-Founder and CEO at <strong>LangChain</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                             <p class="quote">"Bằng cách kết hợp sức mạnh của cơ sở hạ tầng cơ sở dữ liệu (database infrastructure) mạnh mẽ và khả năng tìm kiếm kết hợp (hybrid search) của MongoDB với A2A và các mô hình AI tiên tiến của Google Cloud, các doanh nghiệp có thể mở khóa những khả năng mới trong các ngành như bán lẻ (retail), sản xuất (manufacturing), và hơn thế nữa để định nghĩa lại tương lai của các ứng dụng AI."</p>
                             <cite>– Andrew Davidson, SVP of Products at <strong>MongoDB</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                              <p class="quote">"Neo4j tự hào hợp tác với Google Cloud, kết hợp biểu đồ tri thức (knowledge graph) và khả năng GraphRAG của công nghệ đồ thị của chúng tôi với A2A để giúp các tổ chức mở khóa các cấp độ tự động hóa và trí thông minh mới đồng thời đảm bảo các tương tác của tác tử vẫn phù hợp về mặt ngữ cảnh, có thể giải thích được (explainable) và đáng tin cậy (trustworthy)."</p>
                              <cite>– Sudhir Hasbe, Chief Product Officer at <strong>Neo4j</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                             <p class="quote">"Chúng tôi tin rằng sự hợp tác giữa giao thức A2A của Google Cloud và nền tảng Khả năng quan sát Thông minh (Intelligent Observability) của New Relic sẽ mang lại giá trị đáng kể cho khách hàng của chúng tôi bằng cách đơn giản hóa việc tích hợp, tạo điều kiện trao đổi dữ liệu trên các hệ thống đa dạng, và cuối cùng là tạo ra một hệ sinh thái tác tử AI thống nhất hơn."</p>
                             <cite>– Thomas Lloyd, Chief Business and Operations Officer, <strong>New Relic</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                              <p class="quote">"Chúng tôi tự hào hợp tác về giao thức A2A của Google Cloud, đây sẽ là một bước quan trọng để cho phép các tác tử AI hoạt động cùng nhau một cách hiệu quả, đồng thời duy trì sự tin cậy (trust) và khả năng sử dụng (usability) ở quy mô lớn."</p>
                              <cite>– Rahul Jain, Co-founder & CPO at <strong>Pendo</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"PayPal hỗ trợ giao thức A2A của Google Cloud, đại diện cho một cách mới để các nhà phát triển và người bán (merchants) tạo ra trải nghiệm thương mại (commerce experiences) thế hệ tiếp theo, được hỗ trợ bởi AI dạng tác tử (agentic AI)."</p>
                             <cite>- Prakhar Mehrotra, SVP & Head of Artificial Intelligence at <strong>PayPal</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                              <p class="quote">"Tại PwC, chúng tôi tin rằng tương lai của AI doanh nghiệp nằm ở sự cộng tác liền mạch—không chỉ giữa con người và hệ thống, mà còn giữa chính các tác tử—đó là lý do tại sao chúng tôi tự hào hỗ trợ agent2agent hợp tác với HĐH tác tử (agent OS) của PwC, giúp thiết lập tiêu chuẩn cho khả năng tương tác tác tử an toàn, có thể mở rộng trên toàn doanh nghiệp."</p>
                              <cite>- Dallas Dolen, Global Google Cloud Alliance Leader, <strong>PwC</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                             <p class="quote">"SAP cam kết hợp tác với Google Cloud và hệ sinh thái rộng lớn hơn để định hình tương lai của khả năng tương tác tác tử thông qua giao thức A2A — một bước đi then chốt để cho phép SAP Joule và các tác tử AI khác hoạt động liền mạch trên các nền tảng doanh nghiệp và khai thác toàn bộ tiềm năng của các quy trình kinh doanh đầu cuối (end-to-end business processes)."</p>
                             <cite>– Walter Sun, SVP & Global Head of AI Engineering, <strong>SAP</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Salesforce đang dẫn đầu với sự hỗ trợ tiêu chuẩn A2A để mở rộng nền tảng mở của chúng tôi, cho phép các tác tử AI hoạt động cùng nhau liền mạch trên Agentforce và các hệ sinh thái khác để biến các khả năng bị ngắt kết nối thành các giải pháp được điều phối (orchestrated solutions) và mang lại lực lượng lao động kỹ thuật số (digital workforce) nâng cao cho khách hàng và nhân viên."</p>
                             <cite>– Gary Lerhaupt, VP Product Architecture, <strong>Salesforce</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                             <p class="quote">"ServiceNow và Google Cloud đang hợp tác để thiết lập một tiêu chuẩn ngành mới cho khả năng tương tác giữa các tác tử (agent-to-agent interoperability), và chúng tôi tin rằng A2A sẽ mở đường cho các trải nghiệm hỗ trợ hiệu quả và kết nối hơn."</p>
                             <cite>– Pat Casey, Chief Technology Officer & EVP of DevOps, <strong>ServiceNow</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                              <p class="quote">"Với giao thức A2A của Google Cloud và Supertab Connect, các tác tử sẽ có thể thanh toán, tính phí, và trao đổi dịch vụ — giống như các doanh nghiệp con người vẫn làm."</p>
                              <cite>– Cosmin Ene, Founder of <strong>Supertab</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"Chúng tôi tại UKG rất vui mừng được hợp tác với Google Cloud về giao thức A2A mới, một khung cho phép chúng tôi xây dựng các trải nghiệm vốn nhân lực (human capital) và lực lượng lao động (workforce experiences) thông minh hơn, hỗ trợ hơn, dự đoán và đáp ứng nhu cầu của nhân viên hơn bao giờ hết."</p>
                             <cite>– Eli Tsinovoi, Head of AI at <strong>UKG</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                              <p class="quote">"Weights & Biases tự hào hợp tác với Google Cloud về giao thức A2A, thiết lập một tiêu chuẩn mở quan trọng sẽ trao quyền cho các tổ chức tự tin triển khai, điều phối (orchestrate), và mở rộng quy mô các tác tử AI đa dạng, bất kể công nghệ nền tảng nào."</p>
                              <cite>– Shawn Lewis, CTO and co-founder at <strong>Weights & Biases</strong></cite>
                         </div>
                     </div>
 
-                    <h3 class="subsection-title animate-on-scroll fade-in">Đối tác Dịch vụ (Services Partners)</h3>
+                    <h3 class="subsection-title gradient-text animate-on-scroll fade-in">Đối tác Dịch vụ (Services Partners)</h3>
                     <div class="partner-feedback-grid">
-                        <!-- Thêm tất cả các trích dẫn từ Services Partners vào đây -->
-                         <div class="feedback-card animate-on-scroll fade-in-up">
+                        <!-- Thêm các thẻ feedback khác với class 'vibrant-card' và 'pop-in' + delay -->
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Giao thức đa tác tử A2A từ Google Cloud là cầu nối sẽ hợp nhất các tác tử chuyên biệt theo miền trên các nền tảng đa dạng để giải quyết các thách thức phức tạp, cho phép giao tiếp liền mạch và trí tuệ tập thể (collective intelligence) cho các giải pháp tác tử thông minh và hiệu quả hơn."</p>
                             <cite>– Scott Alfieri, AGBG Global lead, <strong>Accenture</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                              <p class="quote">"Khả năng tương tác giữa các tác tử là một yếu tố nền tảng để cho phép sự phát triển của kiến trúc AI dạng tác tử (agentic AI architectures), và sáng kiến A2A của Google Cloud nhằm tập hợp một hệ sinh thái gồm các thành viên trong ngành công nghệ để cùng phát triển và hỗ trợ giao thức này sẽ đẩy nhanh đáng kể việc áp dụng AI dạng tác tử."</p>
                              <cite>– Gopal Srinivasan, <strong>Deloitte</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-2">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-2">
                             <p class="quote">"Chúng tôi đã dẫn đầu trong không gian A2A bằng cách tập trung vào các giải pháp ngành mang lại giá trị kinh doanh thực sự — tiết kiệm thời gian, giảm chi phí chung và giúp khách hàng của chúng tôi tăng doanh thu và cải thiện các quy trình như phát triển tài liệu FDA trong quá trình khám phá thuốc (drug discovery process)."</p>
                              <cite>– Marc Cerro, VP of Global Google Cloud Partnership at <strong>EPAM</strong></cite>
                          </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-3">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-3">
                             <p class="quote">"HCLTech đang đi đầu trong doanh nghiệp tác tử (agentic enterprise), và chúng tôi tự hào hợp tác với Google Cloud trong việc xác định khả năng tương tác giữa các tác tử và thúc đẩy các khả năng AI tác tử thông qua tiêu chuẩn A2A mở."</p>
                             <cite>– Vijay Guntur, Chief Technology Officer and Head of Ecosystems, <strong>HCLTech</strong></cite>
                         </div>
-                        <div class="feedback-card animate-on-scroll fade-in-up delay-4">
+                        <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-4">
                             <p class="quote">"Tại KPMG, chúng tôi rất vui mừng được trở thành một phần của sáng kiến mới nổi này vì A2A cung cấp tiêu chuẩn thiết yếu mà chúng tôi cần để các tác tử AI khác nhau thực sự cộng tác một cách hiệu quả và có trách nhiệm, điều này sẽ cho phép khách hàng và doanh nghiệp khai thác liền mạch AI để đổi mới và tăng hiệu quả."</p>
                             <cite>– Sherif AbdElGawad, Partner, Google Cloud & AI Leader, <strong>KPMG</strong></cite>
                          </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-5">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-5">
                             <p class="quote">"Khả năng các tác tử tự động khám phá các khả năng và xây dựng trải nghiệm người dùng trên các nền tảng là rất quan trọng để khai thác tiềm năng thực sự của doanh nghiệp. Chúng tôi coi giao thức A2A là một bước đi then chốt để trao quyền cho các doanh nghiệp xây dựng các tác tử có thể tương tác như vậy."</p>
                              <cite>- Asif Hasan, Co-founder of <strong>Quantiphi</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in">
                             <p class="quote">"Giao thức A2A là nền tảng cho kỷ nguyên tiếp theo của tự động hóa tác tử (agentic automation), nơi Khả năng tương tác ngữ nghĩa (Semantic Interoperability) chiếm vị trí nổi bật, và chúng tôi tự hào dẫn đầu hành trình chuyển đổi này."</p>
                             <cite>– Anupam Singhal, President, Manufacturing business, <strong>Tata Consultancy Services (TCS)</strong></cite>
                         </div>
-                         <div class="feedback-card animate-on-scroll fade-in-up delay-1">
+                         <div class="feedback-card vibrant-card animate-on-scroll pop-in delay-1">
                              <p class="quote">"Bởi vì tương lai của AI nằm ở sự cộng tác liền mạch, các giao thức mở như A2A sẽ là nền tảng của một hệ sinh thái nơi các tác tử AI thúc đẩy sự đổi mới ở quy mô lớn."</p>
                              <cite>– Nagendra P Bandaru, Managing Partner and Global Head – Technology Services (<strong>Wipro</strong>)</cite>
                          </div>
@@ -369,26 +375,24 @@
             </div>
         </section>
 
-        <section id="learn-more" class="content-section call-to-action">
+        <section id="learn-more" class="content-section call-to-action vibrant-cta"> <!-- Thêm class vibrant-cta -->
             <div class="container section-container text-center">
                 <h2 class="section-title light animate-on-scroll fade-in">Tìm hiểu thêm về A2A</h2>
                  <p class="cta-description light animate-on-scroll fade-in delay-1">Để tìm hiểu thêm về khung A2A, hãy tìm hiểu sâu về <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer"><strong>bản nháp đặc tả đầy đủ</strong></a> và khám phá <a href="https://google.github.io/A2A" target="_blank" rel="noopener noreferrer"><strong>các mẫu mã có sẵn</strong></a> để kiểm tra cấu trúc của giao thức và thử nghiệm mã của nó.</p>
                  <p class="cta-description light animate-on-scroll fade-in delay-2">Chúng tôi khuyến khích bạn đóng góp vào sự phát triển của giao thức và giúp chúng tôi định hình tương lai của khả năng tương tác tác tử bằng cách <a href="https://docs.google.com/forms/d/e/1FAIpQLScS23OMSKnVFmYeqS2dP7dxY3eTyT7lmtGLUa8OJZfP4RTijQ/viewform" target="_blank" rel="noopener noreferrer">gửi ý tưởng</a>, <a href="https://github.com/google/A2A/blob/main/CONTRIBUTING.md" target="_blank" rel="noopener noreferrer">đóng góp vào tài liệu</a>, và tham gia vào cộng đồng.</p>
                  <div class="cta-buttons animate-on-scroll fade-in delay-3">
-                     <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="cta-button primary large">Đọc Đặc tả trên GitHub</a>
-                     <a href="https://google.github.io/A2A" target="_blank" rel="noopener noreferrer" class="cta-button secondary large">Truy cập Website A2A</a>
+                     <a href="https://github.com/google/A2A" target="_blank" rel="noopener noreferrer" class="cta-button glowing-button primary large">Đọc Đặc tả trên GitHub</a>
+                     <a href="https://google.github.io/A2A" target="_blank" rel="noopener noreferrer" class="cta-button glowing-button secondary large">Truy cập Website A2A</a>
                  </div>
              </div>
         </section>
 
-         <!-- Phần nội dung cuối bài viết gốc -->
-         <section class="post-end-content content-section">
+        <section class="post-end-content content-section">
             <div class="container section-container">
                  <div class="post-tags animate-on-scroll fade-in">
                     <strong>Đăng trong:</strong>
                     <a href="https://developers.googleblog.com/en/search/?product_categories=Cloud" target="_blank" rel="noopener noreferrer">Cloud</a>
                     <a href="https://developers.googleblog.com/en/search/?technology_categories=AI" target="_blank" rel="noopener noreferrer">AI</a>
-                    <!-- <a href="https://developers.googleblog.com/en/search/?technology_categories=Cloud">Cloud</a> --> <!-- Duplicate -->
                     <a href="https://developers.googleblog.com/en/search/?content_type_categories=Announcements" target="_blank" rel="noopener noreferrer">Thông báo (Announcements)</a>
                     <a href="https://developers.googleblog.com/en/search/?content_type_categories=Industry+Trends" target="_blank" rel="noopener noreferrer">Xu hướng ngành (Industry Trends)</a>
                     <a href="https://developers.googleblog.com/en/search/?tag=Agentic AI" target="_blank" rel="noopener noreferrer">AI dạng tác tử (Agentic AI)</a>
@@ -396,55 +400,51 @@
                 </div>
 
                 <nav class="post-navigation animate-on-scroll fade-in">
-                     <a href="https://developers.googleblog.com/en/google-developer-program-latest-enhancements/" class="prev-post" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-left"></i> Trước</a>
-                     <a href="https://developers.googleblog.com/en/the-gemini-api-and-the-internet-of-things/" class="next-post" target="_blank" rel="noopener noreferrer">Tiếp theo <i class="fas fa-arrow-right"></i></a>
+                     <a href="https://developers.googleblog.com/en/google-developer-program-latest-enhancements/" class="prev-post vibrant-link" target="_blank" rel="noopener noreferrer"><i class="fas fa-arrow-left"></i> Trước</a>
+                     <a href="https://developers.googleblog.com/en/the-gemini-api-and-the-internet-of-things/" class="next-post vibrant-link" target="_blank" rel="noopener noreferrer">Tiếp theo <i class="fas fa-arrow-right"></i></a>
                 </nav>
             </div>
         </section>
 
-        <!-- Phần bài viết liên quan (Đã cập nhật chi tiết) -->
-        <aside class="related-posts-section alt-bg">
+        <aside class="related-posts-section alt-bg pattern-bg"> <!-- Thêm pattern-bg -->
              <div class="container section-container">
-                <h2 class="section-title text-center animate-on-scroll fade-in">Bài viết liên quan</h2>
+                <h2 class="section-title text-center gradient-text animate-on-scroll fade-in">Bài viết liên quan</h2>
                  <div class="related-posts-grid">
-                     <!-- Card 1 -->
-                    <a href="https://developers.googleblog.com/en/apigee-announces-general-availability-of-apim-extension-processor/" target="_blank" rel="noopener noreferrer" class="related-post-card animate-on-scroll fade-in-up">
+                     <!-- Sử dụng class 'vibrant-card' và animation 'pop-in' -->
+                     <a href="https://developers.googleblog.com/en/apigee-announces-general-availability-of-apim-extension-processor/" target="_blank" rel="noopener noreferrer" class="related-post-card vibrant-card animate-on-scroll pop-in">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/Apigee-API-Hub-Feature_1.2e16d0ba.fill-800x400.png" alt="Apigee announces general availability of APIM Extension Processor" class="related-post-image">
                          <div class="related-post-content">
                             <span class="related-post-category">Cloud, Cloud Announcements, Problem-Solving</span>
                             <h3>Apigee công bố tính khả dụng chung (general availability) của Bộ xử lý mở rộng APIM (APIM Extension Processor)</h3>
                              <p class="related-post-date">NGÀY 15 THÁNG 4 NĂM 2025</p>
-                             <span class="read-more">Đọc thêm <i class="fas fa-arrow-right"></i></span>
+                             <span class="read-more vibrant-link">Đọc thêm <i class="fas fa-arrow-right"></i></span>
                          </div>
                      </a>
-                     <!-- Card 2 -->
-                    <a href="https://developers.googleblog.com/en/google-martech-solutions-putting-generative-ai-in-marketing/" target="_blank" rel="noopener noreferrer" class="related-post-card animate-on-scroll fade-in-up delay-1">
+                     <a href="https://developers.googleblog.com/en/google-martech-solutions-putting-generative-ai-in-marketing/" target="_blank" rel="noopener noreferrer" class="related-post-card vibrant-card animate-on-scroll pop-in delay-1">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/MarchTech-Blog1-A-Meta.2e16d0ba.fill-800x400.png" alt="Three MarTech solutions putting generative AI in marketing" class="related-post-image">
                          <div class="related-post-content">
                              <span class="related-post-category">Cloud, Gemini AI, Case Studies, Business and Leadership</span>
                             <h3>Ba giải pháp MarTech đưa AI tạo sinh (generative AI) vào marketing</h3>
                              <p class="related-post-date">NGÀY 16 THÁNG 4 NĂM 2025</p>
-                             <span class="read-more">Đọc thêm <i class="fas fa-arrow-right"></i></span>
+                             <span class="read-more vibrant-link">Đọc thêm <i class="fas fa-arrow-right"></i></span>
                          </div>
                      </a>
-                     <!-- Card 3 -->
-                     <a href="https://developers.googleblog.com/en/google-io-program-lineup-revealed/" target="_blank" rel="noopener noreferrer" class="related-post-card animate-on-scroll fade-in-up delay-2">
+                    <a href="https://developers.googleblog.com/en/google-io-program-lineup-revealed/" target="_blank" rel="noopener noreferrer" class="related-post-card vibrant-card animate-on-scroll pop-in delay-2">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/google-io-2025-meta.2e16d0ba.fill-800x400.png" alt="Get ready for Google I/O: Program lineup revealed" class="related-post-image">
                          <div class="related-post-content">
                              <span class="related-post-category">Mobile, Web, Announcements, Events</span>
                              <h3>Sẵn sàng cho Google I/O: Danh sách chương trình được tiết lộ</h3>
                              <p class="related-post-date">NGÀY 23 THÁNG 4 NĂM 2025</p>
-                             <span class="read-more">Đọc thêm <i class="fas fa-arrow-right"></i></span>
+                             <span class="read-more vibrant-link">Đọc thêm <i class="fas fa-arrow-right"></i></span>
                         </div>
                      </a>
-                      <!-- Card 4 -->
-                    <a href="https://developers.googleblog.com/en/achieve-real-time-interaction-build-with-the-live-api/" target="_blank" rel="noopener noreferrer" class="related-post-card animate-on-scroll fade-in-up delay-3">
+                    <a href="https://developers.googleblog.com/en/achieve-real-time-interaction-build-with-the-live-api/" target="_blank" rel="noopener noreferrer" class="related-post-card vibrant-card animate-on-scroll pop-in delay-3">
                          <img src="https://storage.googleapis.com/gweb-developer-goog-blog-assets/images/gemini-live-api-meta.2e16d0ba.fill-800x400.png" alt="Achieve real-time interaction: Build with the Live API" class="related-post-image">
                          <div class="related-post-content">
                              <span class="related-post-category">Gemini, Google AI Studio, AI, Announcements</span>
                             <h3>Đạt được tương tác thời gian thực: Xây dựng với Live API</h3>
                              <p class="related-post-date">NGÀY 23 THÁNG 4 NĂM 2025</p>
-                             <span class="read-more">Đọc thêm <i class="fas fa-arrow-right"></i></span>
+                             <span class="read-more vibrant-link">Đọc thêm <i class="fas fa-arrow-right"></i></span>
                          </div>
                      </a>
                  </div>
@@ -453,14 +453,14 @@
 
     </main>
 
-    <footer class="site-footer">
+    <footer class="site-footer vibrant-footer"> <!-- Thêm class vibrant-footer -->
         <div class="container footer-content">
              <div class="footer-column">
                  <a href="https://developers.google.com/" target="_blank" rel="noopener noreferrer" class="footer-logo-google">
                      <img src="https://storage.googleapis.com/gweb-developer-goog-blog-cms-assets/site/20250422-162949/images/g-dev.svg" alt="Google for Developers">
                  </a>
-                 <p>Kết nối, học hỏi và xây dựng cùng Google.</p>
-                 <button class="cta-button secondary small manage-cookies-button">Quản lý cookies</button> <!-- Nút quản lý cookies -->
+                 <p>Kết nối, học hỏi và xây dựng tương lai với Google & cộng đồng A2A.</p>
+                 <button class="cta-button glowing-button secondary small manage-cookies-button">Quản lý cookies</button>
             </div>
             <div class="footer-column">
                 <h4>Kết nối</h4>
@@ -483,35 +483,34 @@
                  </ul>
              </div>
              <div class="footer-column">
-                 <h4>Bảng điều khiển Nhà phát triển</h4>
+                 <h4>Bảng điều khiển</h4>
                  <ul>
-                    <li><a href="https://console.developers.google.com" target="_blank" rel="noopener noreferrer">Google API Console</a></li>
-                    <li><a href="https://console.cloud.google.com" target="_blank" rel="noopener noreferrer">Google Cloud Platform Console</a></li>
-                    <li><a href="https://play.google.com/apps/publish" target="_blank" rel="noopener noreferrer">Google Play Console</a></li>
+                    <li><a href="https://console.developers.google.com" target="_blank" rel="noopener noreferrer">API Console</a></li>
+                    <li><a href="https://console.cloud.google.com" target="_blank" rel="noopener noreferrer">Cloud Platform Console</a></li>
+                    <li><a href="https://play.google.com/apps/publish" target="_blank" rel="noopener noreferrer">Play Console</a></li>
                     <li><a href="https://console.firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase Console</a></li>
                     <li><a href="https://console.actions.google.com" target="_blank" rel="noopener noreferrer">Actions on Google Console</a></li>
-                    <li><a href="https://cast.google.com/publish" target="_blank" rel="noopener noreferrer">Cast SDK Developer Console</a></li>
-                    <li><a href="https://chrome.google.com/webstore/developer/dashboard" target="_blank" rel="noopener noreferrer">Chrome Web Store Dashboard</a></li>
+                    <li><a href="https://cast.google.com/publish" target="_blank" rel="noopener noreferrer">Cast SDK Console</a></li>
+                    <li><a href="https://chrome.google.com/webstore/developer/dashboard" target="_blank" rel="noopener noreferrer">Chrome Web Store</a></li>
                  </ul>
             </div>
              <div class="footer-column">
-                 <h4>Tài nguyên khác</h4>
+                 <h4>Tài nguyên</h4>
                  <ul>
                      <li><a href="https://developers.google.com/products" target="_blank" rel="noopener noreferrer">Tất cả sản phẩm</a></li>
                      <li><a href="https://developer.android.com" target="_blank" rel="noopener noreferrer">Android</a></li>
                      <li><a href="https://developer.chrome.com/home" target="_blank" rel="noopener noreferrer">Chrome</a></li>
                      <li><a href="https://firebase.google.com" target="_blank" rel="noopener noreferrer">Firebase</a></li>
-                     <li><a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">Google Cloud Platform</a></li>
+                     <li><a href="https://cloud.google.com" target="_blank" rel="noopener noreferrer">Google Cloud</a></li>
                  </ul>
             </div>
         </div>
         <div class="footer-bottom">
              <div class="container footer-bottom-container">
-                 <p>© 2025 Google. Nội dung được cung cấp bởi cộng đồng A2A.</p>
+                 <p>© 2025 Google & Cộng đồng A2A. Xây dựng một tương lai kết nối.</p>
                  <div class="footer-legal-links">
                     <a href="https://developers.google.com/terms/site-terms" target="_blank" rel="noopener noreferrer">Điều khoản</a> |
                     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Quyền riêng tư</a>
-                    <!-- Language selector can be added here if needed -->
                  </div>
              </div>
         </div>
